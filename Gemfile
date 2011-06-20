@@ -19,6 +19,10 @@ gem 'jquery-rails'
 
 gem 'compass'
 
+group :production do
+  gem 'therubyracer-heroku', '0.8.1.pre3'
+end
+
 # Use unicorn as the web server
 # gem 'unicorn'
 
