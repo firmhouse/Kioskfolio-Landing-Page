@@ -1,0 +1,19 @@
+#header
+
+  %div{:style => "text-align: center; margin-top: 40px;"}
+    = image_tag "logo.png"
+  
+  %div#tagline
+    %h1 We help you sell and spread your templates and themes.
+  
+#problems
+  .problem
+    %h2 Ads not working?
+    = image_tag "ad_suck.png"
+    %p.learn_more
+      = link_to "Learn more &rarr;".html_safe, "#", :class => "button", :id => "ads_learn_more"
+  .problem
+    %h2 Lost in a forrest of designers?
+    = image_tag "forrest_brand.png"
+    %p.learn_more
+      = link_to "Learn more &rarr;".html_safe, "#", :class => "button", :id => "forrest_learn_more"

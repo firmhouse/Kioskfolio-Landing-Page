@@ -1,0 +1,77 @@
+/* 
+  Place all the styles related to the matching controller here.
+  They will automatically be included in application.css.
+  You can use Sass (SCSS) here: http://sass-lang.com/
+*/
+
+@import "blueprint/reset";
+@import "compass";
+
+body {
+  background-image: url('/assets/background.png');
+  font-family: "Helvetica", sans-serif;
+}
+
+#header {
+  @include clearfix;
+  @include box-shadow(rgba(0,0,0,0.2), 0, 2px, 10px);
+}
+
+#tagline {
+  text-align: center;
+  font-weight: bold;
+  font-size: 24px;
+  @include text-shadow(#FFF, 0, 1px, 0);
+  margin-top: 30px;
+  margin-bottom: 40px;
+  color: rgba(0,0,0,0.8);
+  p {
+    margin: .5em 0;
+  }
+}
+
+#problems {
+  padding: 40px 20px;
+  text-align: center;
+  //@include radial-gradient(color-stops(rgba(255,255,255,0.5), rgba(255,255,255,0) 300px));
+  .problem {
+    position: relative;
+    background-color: #FFF;
+    @include border-radius;
+    margin-right: 20px;
+    height: 200px;
+    @include box-shadow(rgba(0,0,0,0.05), 0, 5px, 20px);
+    border: 1px solid rgba(0,0,0,0.2);
+    h2 {
+      margin-bottom: 20px;
+      font-size: 20px;
+      letter-spacing: -.5px;
+    }
+    text-align: center;
+    @include inline-block;
+    padding: 20px;
+    background-color: #FFF;
+    vertical-align: top;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.learn_more {
+  margin-top: 20px;
+  position: absolute;
+  bottom: 30px;
+  left: 90px;
+}
+
+.button {
+  @include border-radius;
+  border: 1px solid #5e9a00;
+  @include background(linear-gradient(color-stops(#74be00, #5e9a00)));
+  padding: 5px 10px;
+  color: darken(#5e9a00, 20%);
+  @include text-shadow(rgba(255,255,255,0.4), 0, 1px, 1px);
+  text-decoration: none;
+  @include box-shadow(#FFF,0,0,1px, false, inset);
+}
