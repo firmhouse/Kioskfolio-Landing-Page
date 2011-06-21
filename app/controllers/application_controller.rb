@@ -7,7 +7,7 @@ class ApplicationController < ActionController::Base
   
   def ensure_www
     if Rails.env.production?
-      if request.env['HOST'] != 'www.kioskfolio.com'
+      if request.host != 'www.kioskfolio.com'
         redirect_to 'http://www.kioskfolio.com', :status => 301
       end
     end
