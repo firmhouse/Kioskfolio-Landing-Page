@@ -97,24 +97,18 @@ body {
 #problems {
   padding: 40px 20px;
   text-align: center;
+  background-color: #FFF;
+  -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+  -o-box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
 }
-/* line 37, ../../app/assets/stylesheets/home.css.scss */
+/* line 38, ../../app/assets/stylesheets/home.css.scss */
 #problems .problem {
   position: relative;
   background-color: #FFF;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -o-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -khtml-border-radius: 5px;
-  border-radius: 5px;
   margin-right: 20px;
   height: 200px;
-  -moz-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
-  -webkit-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
-  -o-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
-  border: 1px solid rgba(0, 0, 0, 0.2);
   text-align: center;
   display: -moz-inline-box;
   -moz-box-orient: vertical;
@@ -125,7 +119,7 @@ body {
   background-color: #FFF;
   vertical-align: top;
 }
-/* line 45, ../../app/assets/stylesheets/home.css.scss */
+/* line 43, ../../app/assets/stylesheets/home.css.scss */
 #problems .problem h2 {
   margin-bottom: 20px;
   font-size: 20px;
@@ -135,12 +129,12 @@ body {
 #problems .problem {
   *display: inline;
 }
-/* line 55, ../../app/assets/stylesheets/home.css.scss */
+/* line 53, ../../app/assets/stylesheets/home.css.scss */
 #problems .problem:last-child {
   margin-right: 0;
 }
 
-/* line 61, ../../app/assets/stylesheets/home.css.scss */
+/* line 59, ../../app/assets/stylesheets/home.css.scss */
 .learn_more {
   margin-top: 20px;
   position: absolute;
@@ -148,21 +142,22 @@ body {
   left: 90px;
 }
 
-/* line 68, ../../app/assets/stylesheets/home.css.scss */
+/* line 66, ../../app/assets/stylesheets/home.css.scss */
 .button {
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -o-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -khtml-border-radius: 5px;
-  border-radius: 5px;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -o-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -khtml-border-radius: 6px;
+  border-radius: 6px;
   border: 1px solid #5e9a00;
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #74be00), color-stop(100%, #5e9a00));
   background: -webkit-linear-gradient(#74be00, #5e9a00);
   background: -moz-linear-gradient(#74be00, #5e9a00);
   background: -o-linear-gradient(#74be00, #5e9a00);
   background: linear-gradient(#74be00, #5e9a00);
-  padding: 5px 10px;
+  padding: 8px 12px;
+  font-weight: bold;
   color: #203400;
   text-shadow: rgba(255, 255, 255, 0.4) 0 1px 1px;
   text-decoration: none;
@@ -170,4 +165,12 @@ body {
   -webkit-box-shadow: inset 0 0 1px white;
   -o-box-shadow: inset 0 0 1px white;
   box-shadow: inset 0 0 1px white;
+}
+/* line 76, ../../app/assets/stylesheets/home.css.scss */
+.button:hover {
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #84d800), color-stop(100%, #6eb300));
+  background: -webkit-linear-gradient(#84d800, #6eb300);
+  background: -moz-linear-gradient(#84d800, #6eb300);
+  background: -o-linear-gradient(#84d800, #6eb300);
+  background: linear-gradient(#84d800, #6eb300);
 }
