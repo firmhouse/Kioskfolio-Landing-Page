@@ -108,7 +108,12 @@ body {
   position: relative;
   background-color: #FFF;
   margin-right: 20px;
-  height: 200px;
+  border: 6px solid #eee;
+  -moz-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+  -o-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+  height: 220px;
   width: 280px;
   text-align: center;
   display: -moz-inline-box;
@@ -120,7 +125,7 @@ body {
   background-color: #FFF;
   vertical-align: top;
 }
-/* line 44, ../../app/assets/stylesheets/home.css.scss */
+/* line 46, ../../app/assets/stylesheets/home.css.scss */
 #problems .problem h2 {
   margin-bottom: 20px;
   font-size: 20px;
@@ -130,20 +135,19 @@ body {
 #problems .problem {
   *display: inline;
 }
-/* line 54, ../../app/assets/stylesheets/home.css.scss */
+/* line 56, ../../app/assets/stylesheets/home.css.scss */
 #problems .problem:last-child {
   margin-right: 0;
 }
 
-/* line 60, ../../app/assets/stylesheets/home.css.scss */
+/* line 62, ../../app/assets/stylesheets/home.css.scss */
 .learn_more {
-  margin-top: 20px;
   position: absolute;
   bottom: 30px;
   left: 90px;
 }
 
-/* line 67, ../../app/assets/stylesheets/home.css.scss */
+/* line 68, ../../app/assets/stylesheets/home.css.scss */
 .button {
   -moz-border-radius: 6px;
   -webkit-border-radius: 6px;
@@ -167,7 +171,7 @@ body {
   -o-box-shadow: inset 0 0 1px white;
   box-shadow: inset 0 0 1px white;
 }
-/* line 77, ../../app/assets/stylesheets/home.css.scss */
+/* line 78, ../../app/assets/stylesheets/home.css.scss */
 .button:hover {
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #84d800), color-stop(100%, #6eb300));
   background: -webkit-linear-gradient(#84d800, #6eb300);

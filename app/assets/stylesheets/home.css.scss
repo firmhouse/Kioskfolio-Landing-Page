@@ -39,7 +39,9 @@ body {
     position: relative;
     background-color: #FFF;
     margin-right: 20px;
-    height: 200px;
+    border: 6px solid #eee;
+    @include box-shadow(rgba(0,0,0,0.1), 0, 2px, 2px);
+    height: 220px;
     width: 280px;
     h2 {
       margin-bottom: 20px;
@@ -58,7 +60,6 @@ body {
 }
 
 .learn_more {
-  margin-top: 20px;
   position: absolute;
   bottom: 30px;
   left: 90px;
