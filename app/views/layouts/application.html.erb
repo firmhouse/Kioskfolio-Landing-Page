@@ -2,34 +2,38 @@
 <html>
 <head>
   <title>Kioskfolio &mdash; Helping you sell and market your templates and themes.</title>
-  <script type="text/javascript">
-    var _kmq = _kmq || [];
-    function _kms(u){
-      setTimeout(function(){
-        var s = document.createElement('script'); var f = document.getElementsByTagName('script')[0]; s.type = 'text/javascript'; s.async = true;
-        s.src = u; f.parentNode.insertBefore(s, f);
-      }, 1);
-    }
-    _kms('//i.kissmetrics.com/i.js');_kms('//doug1izaerwt3.cloudfront.net/cbd34996813e1f4d148aa713e04ba2ef93d0470f.1.js');
-  </script>
+  <% if Rails.env.production? %>
+    <script type="text/javascript">
+      var _kmq = _kmq || [];
+      function _kms(u){
+        setTimeout(function(){
+          var s = document.createElement('script'); var f = document.getElementsByTagName('script')[0]; s.type = 'text/javascript'; s.async = true;
+          s.src = u; f.parentNode.insertBefore(s, f);
+        }, 1);
+      }
+      _kms('//i.kissmetrics.com/i.js');_kms('//doug1izaerwt3.cloudfront.net/cbd34996813e1f4d148aa713e04ba2ef93d0470f.1.js');
+    </script>
+  <% end %>
   
   <%= stylesheet_link_tag    "application" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
   
-  <script type="text/javascript">
+  <% if Rails.env.production? %>
+    <script type="text/javascript">
 
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-24091458-1']);
-    _gaq.push(['_trackPageview']);
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-24091458-1']);
+      _gaq.push(['_trackPageview']);
 
-    (function() {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
 
-  </script>
+    </script>
+  <% end -%>
 </head>
 <body>
   <script type="text/javascript">var _kiq = _kiq || [];</script>
