@@ -150,10 +150,7 @@ body {
 #accordion {
   background-color: #FFF;
   width: 500px;
-  -moz-box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.2);
-  -webkit-box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.2);
-  -o-box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.2);
-  box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.2);
+  /* @include box-shadow(rgba(0,0,0,0.2), 0, 0, 15px, false, inset); */
   border: 1px solid #ddd;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;

@@ -67,7 +67,7 @@ body {
 #accordion {
   background-color: #FFF;
   width: 500px;
-  @include box-shadow(rgba(0,0,0,0.2), 0, 0, 15px, false, inset);
+  /* @include box-shadow(rgba(0,0,0,0.2), 0, 0, 15px, false, inset); */
   border: 1px solid #ddd;
   @include border-radius;
   overflow: hidden;
