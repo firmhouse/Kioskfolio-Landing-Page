@@ -14,14 +14,14 @@
     
     #accordion
       .element= image_tag "you.png", :alt => "Template designer / developer / creator that is surfing."
-      %h2#you_template_creator.active You: You are an awesome template creator and you may or may not look like the person in this picture.
+      %h2.active= link_to  "You: You are an awesome template creator and you may or may not look like the person in this picture.", "#", :id => "you_template_creator"
       
       .element= image_tag "forest_hello.png", :alt => "Image reflecting a forest with a lost cry for help."
-      %h2#problem_personal_brand Problem: The online marketplace you're on doesn't let you promote your personal brand enough.
+      %h2= link_to "Problem: The online marketplace you're on doesn't let you promote your personal brand enough.", "#", :id => "problem_brand"
       
       .element= image_tag "adwords_conversion.png", :alt => "Image showing an Adwords ad pointing no conversion to selling a theme."
-      %h2#problem_adwords Problem: People aren't clicking on your ads and it's hard to figure out why.
-    
+      %h2= link_to "Problem: People aren't clicking on your ads and it's hard to figure out why.", "#", :id => "problem_adwords"
+      
     #beta_signup
       %h2 
         We are building something for you. Join our beta.

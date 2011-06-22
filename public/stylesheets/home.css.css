@@ -173,55 +173,62 @@ body {
 }
 /* line 77, ../../app/assets/stylesheets/home.css.scss */
 #accordion h2 {
-  padding: 20px;
   font-weight: bold;
   font-size: 14px;
   margin: 0;
   line-height: 1.3em;
   border-bottom: 1px solid #d1e1ed;
-  color: #adc9df;
-  text-shadow: white 0 1px 0;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f6f9fb), color-stop(100%, #e4edf4));
   background-image: -webkit-linear-gradient(top, #f6f9fb, #e4edf4);
   background-image: -moz-linear-gradient(top, #f6f9fb, #e4edf4);
   background-image: -o-linear-gradient(top, #f6f9fb, #e4edf4);
   background-image: linear-gradient(top, #f6f9fb, #e4edf4);
 }
-/* line 84, ../../app/assets/stylesheets/home.css.scss */
+/* line 83, ../../app/assets/stylesheets/home.css.scss */
+#accordion h2 a {
+  display: block;
+  padding: 20px;
+  text-decoration: none;
+  color: #adc9df;
+  text-shadow: white 0 1px 0;
+}
+/* line 90, ../../app/assets/stylesheets/home.css.scss */
 #accordion h2:last-child {
   border-bottom: 0;
 }
-/* line 87, ../../app/assets/stylesheets/home.css.scss */
+/* line 93, ../../app/assets/stylesheets/home.css.scss */
 #accordion h2.active {
   background: none;
   font-size: 18px;
-  color: #000;
   border-bottom: 1px solid #d1e1ed;
 }
-/* line 92, ../../app/assets/stylesheets/home.css.scss */
+/* line 94, ../../app/assets/stylesheets/home.css.scss */
+#accordion h2.active a {
+  color: #000;
+}
+/* line 100, ../../app/assets/stylesheets/home.css.scss */
 #accordion h2.active:last-child {
   border: 0;
 }
-/* line 95, ../../app/assets/stylesheets/home.css.scss */
-#accordion h2.active:hover {
+/* line 104, ../../app/assets/stylesheets/home.css.scss */
+#accordion h2.active:hover a {
   color: #000;
 }
-/* line 99, ../../app/assets/stylesheets/home.css.scss */
-#accordion h2:hover {
+/* line 110, ../../app/assets/stylesheets/home.css.scss */
+#accordion h2:hover a {
   color: #518dbb;
-  cursor: pointer;
 }
-/* line 107, ../../app/assets/stylesheets/home.css.scss */
+/* line 117, ../../app/assets/stylesheets/home.css.scss */
 #accordion .element {
   padding: 20px;
   text-align: center;
 }
-/* line 110, ../../app/assets/stylesheets/home.css.scss */
+/* line 120, ../../app/assets/stylesheets/home.css.scss */
 #accordion .element img {
   margin-top: 20px;
 }
 
-/* line 116, ../../app/assets/stylesheets/home.css.scss */
+/* line 126, ../../app/assets/stylesheets/home.css.scss */
 .problem {
   position: relative;
   background-color: #FFF;
@@ -243,7 +250,7 @@ body {
   background-color: #FFF;
   vertical-align: top;
 }
-/* line 124, ../../app/assets/stylesheets/home.css.scss */
+/* line 134, ../../app/assets/stylesheets/home.css.scss */
 .problem h2 {
   margin-bottom: 20px;
   font-size: 20px;
@@ -253,19 +260,19 @@ body {
 .problem {
   *display: inline;
 }
-/* line 134, ../../app/assets/stylesheets/home.css.scss */
+/* line 144, ../../app/assets/stylesheets/home.css.scss */
 .problem:last-child {
   margin-right: 0;
 }
 
-/* line 139, ../../app/assets/stylesheets/home.css.scss */
+/* line 149, ../../app/assets/stylesheets/home.css.scss */
 .learn_more {
   position: absolute;
   bottom: 30px;
   left: 90px;
 }
 
-/* line 145, ../../app/assets/stylesheets/home.css.scss */
+/* line 155, ../../app/assets/stylesheets/home.css.scss */
 .button {
   -moz-border-radius: 6px;
   -webkit-border-radius: 6px;
@@ -289,7 +296,7 @@ body {
   -o-box-shadow: inset 0 0 1px white;
   box-shadow: inset 0 0 1px white;
 }
-/* line 155, ../../app/assets/stylesheets/home.css.scss */
+/* line 165, ../../app/assets/stylesheets/home.css.scss */
 .button:hover {
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ff9e20), color-stop(100%, #ec8500));
   background: -webkit-linear-gradient(#ff9e20, #ec8500);
@@ -297,7 +304,7 @@ body {
   background: -o-linear-gradient(#ff9e20, #ec8500);
   background: linear-gradient(#ff9e20, #ec8500);
 }
-/* line 158, ../../app/assets/stylesheets/home.css.scss */
+/* line 168, ../../app/assets/stylesheets/home.css.scss */
 .button.large {
   font-size: 22px;
 }
