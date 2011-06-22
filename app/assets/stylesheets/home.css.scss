@@ -8,54 +8,131 @@
 @import "compass";
 
 body {
-  background-image: url('/assets/background.png');
   font-family: "Helvetica", sans-serif;
+  background-image: url(/assets/noise.png);
+  @include text-shadow(#FFF, 0, 1px, 0);
 }
 
 #header {
-  @include clearfix;
-  @include box-shadow(rgba(0,0,0,0.2), 0, 2px, 10px);
+  width: 960px;
+  padding: 20px 0;
+  margin: auto;
 }
 
 #tagline {
-  text-align: center;
   font-weight: bold;
-  font-size: 24px;
-  @include text-shadow(#FFF, 0, 1px, 0);
-  margin-top: 30px;
-  margin-bottom: 40px;
-  color: rgba(0,0,0,0.8);
+  font-size: 30px;
+  margin: 30px 0;
+}
+
+.wrapper {
+  @include clearfix;
+}
+
+#header_wrapper {
+  @include box-shadow(#ddd, 0, 2px, 2px);
+  @include background(linear-gradient(#518dbb, darken(#518dbb, 5%)));
+}
+
+.container {
+  width: 960px;
+  margin: auto;
+}
+
+#beta_signup {
+  width: 400px;
+  @include inline-block;
+  vertical-align: top;
+  h2 {
+    font-size: 20px;
+    line-height: 1.5em;
+    font-weight: bold;
+    margin: 1em 0;
+  }
+  p.cta {
+    text-align: center;
+    margin: 40px 0;
+  }
   p {
-    margin: .5em 0;
+    line-height: 1.5em;
+    margin: 1em 0;
+    color: #444;
+    em {
+      color: #000;
+      font-weight: 600;
+    }
   }
 }
 
-#problems {
-  padding: 40px 20px;
-  text-align: center;
+#accordion {
   background-color: #FFF;
-  @include box-shadow(rgba(0,0,0,0.1), 0, 0, 4px);
-  .problem {
-    position: relative;
-    background-color: #FFF;
-    margin-right: 20px;
-    border: 6px solid #eee;
-    @include box-shadow(rgba(0,0,0,0.1), 0, 2px, 2px);
-    height: 220px;
-    width: 280px;
-    h2 {
-      margin-bottom: 20px;
-      font-size: 20px;
-      letter-spacing: -.5px;
-    }
-    text-align: center;
-    @include inline-block;
+  width: 500px;
+  @include box-shadow(rgba(0,0,0,0.2), 0, 0, 15px, false, inset);
+  border: 1px solid #ddd;
+  @include border-radius;
+  overflow: hidden;
+  margin-bottom: 10px;
+  @include inline-block;
+  margin-right: 50px;
+  h2 {
     padding: 20px;
-    background-color: #FFF;
-    vertical-align: top;
+    font-weight: bold;
+    font-size: 14px;
+    margin: 0;
+    line-height: 1.3em;
+    border-bottom: 1px solid lighten(#518dbb, 35%);
     &:last-child {
-      margin-right: 0;
+      border-bottom: 0;
+    };
+    &.active {
+      background: none;
+      font-size: 18px;
+      color: #000;
+      border-bottom: 1px solid lighten(#518dbb, 35%);
+      &:last-child {
+        border: 0;
+      };
+      &:hover {
+        color: #000;
+      };
     }
+    &:hover {
+      color: #518dbb;
+      cursor: pointer;
+    }
+    color: lighten(#518dbb, 25%);
+    @include text-shadow(#FFF, 0, 1px, 0);
+    @include linear-gradient(color-stops(lighten(#518dbb, 45%), lighten(#518dbb, 40%)));
+  }
+  .element {
+    padding: 20px;
+    text-align: center;
+    img {
+      margin-top: 20px;
+    }
+  }
+}
+
+.problem {
+  position: relative;
+  background-color: #FFF;
+  margin-right: 20px;
+  border: 6px solid #eee;
+  @include box-shadow(rgba(0,0,0,0.1), 0, 2px, 2px);
+  height: 220px;
+  width: 280px;
+  h2 {
+    margin-bottom: 20px;
+    font-size: 20px;
+    letter-spacing: -.5px;
+  }
+  text-align: center;
+  @include inline-block;
+  padding: 20px;
+  background-color: #FFF;
+  vertical-align: top;
+  &:last-child {
+    margin-right: 0;
   }
 }
 
@@ -67,15 +144,18 @@ body {
 
 .button {
   @include border-radius(6px);
-  border: 1px solid #5e9a00;
-  @include background(linear-gradient(color-stops(#74be00, #5e9a00)));
+  border: 1px solid darken(#ec8500, 5%);
+  @include background(linear-gradient(color-stops(#ec8500, darken(#ec8500, 5%))));
   padding: 8px 12px;
   font-weight: bold;
-  color: darken(#5e9a00, 20%);
+  color: darken(#5e9a00, 30%);
   @include text-shadow(rgba(255,255,255,0.4), 0, 1px, 1px);
   text-decoration: none;
   @include box-shadow(#FFF,0,0,1px, false, inset);
   &:hover {
-    @include background(linear-gradient(color-stops(lighten(#74be00, 5%), lighten(#5e9a00, 5%))));
+    @include background(linear-gradient(color-stops(lighten(#ec8500, 10%), #ec8500)));
   };
+  &.large {
+    font-size: 20px;
+  }
 }

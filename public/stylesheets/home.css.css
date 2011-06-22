@@ -64,47 +64,168 @@ a img {
 
 /* line 10, ../../app/assets/stylesheets/home.css.scss */
 body {
-  background-image: url("/assets/background.png");
   font-family: "Helvetica", sans-serif;
+  background-image: url(/assets/noise.png);
+  text-shadow: white 0 1px 0;
 }
 
-/* line 15, ../../app/assets/stylesheets/home.css.scss */
+/* line 16, ../../app/assets/stylesheets/home.css.scss */
 #header {
+  width: 960px;
+  padding: 20px 0;
+  margin: auto;
+}
+
+/* line 22, ../../app/assets/stylesheets/home.css.scss */
+#tagline {
+  font-weight: bold;
+  font-size: 30px;
+  margin: 30px 0;
+}
+
+/* line 28, ../../app/assets/stylesheets/home.css.scss */
+.wrapper {
   overflow: hidden;
   *zoom: 1;
-  -moz-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-  -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-  -o-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* line 20, ../../app/assets/stylesheets/home.css.scss */
-#tagline {
-  text-align: center;
+/* line 32, ../../app/assets/stylesheets/home.css.scss */
+#header_wrapper {
+  -moz-box-shadow: 0 2px 2px #dddddd;
+  -webkit-box-shadow: 0 2px 2px #dddddd;
+  -o-box-shadow: 0 2px 2px #dddddd;
+  box-shadow: 0 2px 2px #dddddd;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #518dbb), color-stop(100%, #4480ae));
+  background: -webkit-linear-gradient(#518dbb, #4480ae);
+  background: -moz-linear-gradient(#518dbb, #4480ae);
+  background: -o-linear-gradient(#518dbb, #4480ae);
+  background: linear-gradient(#518dbb, #4480ae);
+}
+
+/* line 37, ../../app/assets/stylesheets/home.css.scss */
+.container {
+  width: 960px;
+  margin: auto;
+}
+
+/* line 42, ../../app/assets/stylesheets/home.css.scss */
+#beta_signup {
+  width: 400px;
+  display: -moz-inline-box;
+  -moz-box-orient: vertical;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  vertical-align: top;
+}
+/* line 7, ../../../../.rvm/gems/ruby-1.9.2-p180/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
+#beta_signup {
+  *display: inline;
+}
+/* line 46, ../../app/assets/stylesheets/home.css.scss */
+#beta_signup h2 {
+  font-size: 20px;
+  line-height: 1.5em;
   font-weight: bold;
-  font-size: 24px;
-  text-shadow: white 0 1px 0;
-  margin-top: 30px;
-  margin-bottom: 40px;
-  color: rgba(0, 0, 0, 0.8);
+  margin: 1em 0;
 }
-/* line 28, ../../app/assets/stylesheets/home.css.scss */
-#tagline p {
-  margin: .5em 0;
+/* line 52, ../../app/assets/stylesheets/home.css.scss */
+#beta_signup p.cta {
+  text-align: center;
+  margin: 40px 0;
+}
+/* line 56, ../../app/assets/stylesheets/home.css.scss */
+#beta_signup p {
+  line-height: 1.5em;
+  margin: 1em 0;
+  color: #444;
+}
+/* line 60, ../../app/assets/stylesheets/home.css.scss */
+#beta_signup p em {
+  color: #000;
+  font-weight: 600;
 }
 
-/* line 33, ../../app/assets/stylesheets/home.css.scss */
-#problems {
-  padding: 40px 20px;
-  text-align: center;
+/* line 67, ../../app/assets/stylesheets/home.css.scss */
+#accordion {
   background-color: #FFF;
-  -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
-  -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
-  -o-box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+  width: 500px;
+  -moz-box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.2);
+  -o-box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.2);
+  border: 1px solid #ddd;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 10px;
+  display: -moz-inline-box;
+  -moz-box-orient: vertical;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  margin-right: 50px;
 }
-/* line 38, ../../app/assets/stylesheets/home.css.scss */
-#problems .problem {
+/* line 7, ../../../../.rvm/gems/ruby-1.9.2-p180/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
+#accordion {
+  *display: inline;
+}
+/* line 77, ../../app/assets/stylesheets/home.css.scss */
+#accordion h2 {
+  padding: 20px;
+  font-weight: bold;
+  font-size: 14px;
+  margin: 0;
+  line-height: 1.3em;
+  border-bottom: 1px solid #d1e1ed;
+  color: #adc9df;
+  text-shadow: white 0 1px 0;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f6f9fb), color-stop(100%, #e4edf4));
+  background-image: -webkit-linear-gradient(top, #f6f9fb, #e4edf4);
+  background-image: -moz-linear-gradient(top, #f6f9fb, #e4edf4);
+  background-image: -o-linear-gradient(top, #f6f9fb, #e4edf4);
+  background-image: linear-gradient(top, #f6f9fb, #e4edf4);
+}
+/* line 84, ../../app/assets/stylesheets/home.css.scss */
+#accordion h2:last-child {
+  border-bottom: 0;
+}
+/* line 87, ../../app/assets/stylesheets/home.css.scss */
+#accordion h2.active {
+  background: none;
+  font-size: 18px;
+  color: #000;
+  border-bottom: 1px solid #d1e1ed;
+}
+/* line 92, ../../app/assets/stylesheets/home.css.scss */
+#accordion h2.active:last-child {
+  border: 0;
+}
+/* line 95, ../../app/assets/stylesheets/home.css.scss */
+#accordion h2.active:hover {
+  color: #000;
+}
+/* line 99, ../../app/assets/stylesheets/home.css.scss */
+#accordion h2:hover {
+  color: #518dbb;
+  cursor: pointer;
+}
+/* line 107, ../../app/assets/stylesheets/home.css.scss */
+#accordion .element {
+  padding: 20px;
+  text-align: center;
+}
+/* line 110, ../../app/assets/stylesheets/home.css.scss */
+#accordion .element img {
+  margin-top: 20px;
+}
+
+/* line 116, ../../app/assets/stylesheets/home.css.scss */
+.problem {
   position: relative;
   background-color: #FFF;
   margin-right: 20px;
@@ -125,29 +246,29 @@ body {
   background-color: #FFF;
   vertical-align: top;
 }
-/* line 46, ../../app/assets/stylesheets/home.css.scss */
-#problems .problem h2 {
+/* line 124, ../../app/assets/stylesheets/home.css.scss */
+.problem h2 {
   margin-bottom: 20px;
   font-size: 20px;
   letter-spacing: -0.5px;
 }
 /* line 7, ../../../../.rvm/gems/ruby-1.9.2-p180/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
-#problems .problem {
+.problem {
   *display: inline;
 }
-/* line 56, ../../app/assets/stylesheets/home.css.scss */
-#problems .problem:last-child {
+/* line 134, ../../app/assets/stylesheets/home.css.scss */
+.problem:last-child {
   margin-right: 0;
 }
 
-/* line 62, ../../app/assets/stylesheets/home.css.scss */
+/* line 139, ../../app/assets/stylesheets/home.css.scss */
 .learn_more {
   position: absolute;
   bottom: 30px;
   left: 90px;
 }
 
-/* line 68, ../../app/assets/stylesheets/home.css.scss */
+/* line 145, ../../app/assets/stylesheets/home.css.scss */
 .button {
   -moz-border-radius: 6px;
   -webkit-border-radius: 6px;
@@ -155,15 +276,15 @@ body {
   -ms-border-radius: 6px;
   -khtml-border-radius: 6px;
   border-radius: 6px;
-  border: 1px solid #5e9a00;
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #74be00), color-stop(100%, #5e9a00));
-  background: -webkit-linear-gradient(#74be00, #5e9a00);
-  background: -moz-linear-gradient(#74be00, #5e9a00);
-  background: -o-linear-gradient(#74be00, #5e9a00);
-  background: linear-gradient(#74be00, #5e9a00);
+  border: 1px solid #d37700;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ec8500), color-stop(100%, #d37700));
+  background: -webkit-linear-gradient(#ec8500, #d37700);
+  background: -moz-linear-gradient(#ec8500, #d37700);
+  background: -o-linear-gradient(#ec8500, #d37700);
+  background: linear-gradient(#ec8500, #d37700);
   padding: 8px 12px;
   font-weight: bold;
-  color: #203400;
+  color: #010100;
   text-shadow: rgba(255, 255, 255, 0.4) 0 1px 1px;
   text-decoration: none;
   -moz-box-shadow: inset 0 0 1px white;
@@ -171,11 +292,15 @@ body {
   -o-box-shadow: inset 0 0 1px white;
   box-shadow: inset 0 0 1px white;
 }
-/* line 78, ../../app/assets/stylesheets/home.css.scss */
+/* line 155, ../../app/assets/stylesheets/home.css.scss */
 .button:hover {
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #84d800), color-stop(100%, #6eb300));
-  background: -webkit-linear-gradient(#84d800, #6eb300);
-  background: -moz-linear-gradient(#84d800, #6eb300);
-  background: -o-linear-gradient(#84d800, #6eb300);
-  background: linear-gradient(#84d800, #6eb300);
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ff9e20), color-stop(100%, #ec8500));
+  background: -webkit-linear-gradient(#ff9e20, #ec8500);
+  background: -moz-linear-gradient(#ff9e20, #ec8500);
+  background: -o-linear-gradient(#ff9e20, #ec8500);
+  background: linear-gradient(#ff9e20, #ec8500);
+}
+/* line 158, ../../app/assets/stylesheets/home.css.scss */
+.button.large {
+  font-size: 20px;
 }

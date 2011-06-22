@@ -1,19 +1,46 @@
-#header
+#header_wrapper.wrapper
 
-  %div{:style => "text-align: center; margin-top: 40px;"}
-    = image_tag "logo.png"
+  #header
+
+    %div
+      = image_tag "logo_for_header.png"
   
-  %div#tagline
-    %h1 We help you sell and spread your templates and themes.
+#content_wrapper.wrapper
+
+  .container
   
-#problems
-  .problem
-    %h2 Ads not working?
-    = image_tag "ad_suck.png"
-    %p.learn_more
-      = link_to_function "Learn more &rarr;".html_safe, "#", :class => "button", :id => "ads_learn_more"
-  .problem
-    %h2 One of thousands on a marketplace?
-    = image_tag "forrest_brand.png"
-    %p.learn_more
-      = link_to "Learn more &rarr;".html_safe, "#", :class => "button", :id => "one_of_thousands_learn_more"
+    %div#tagline
+      %h1 Promote your Wordpress themes.
+    
+    #accordion
+      .element= image_tag "you.png"
+      %h2.active You: You are an awesome template creator and you may or may not look like the person in this picture.
+      
+      .element= image_tag "forest_hello.png"
+      %h2 Problem: The online marketplace you're on doesn't let you promote your personal brand enough.
+      
+      .element= image_tag "adwords_conversion.png"
+      %h2 Problem: People aren't clicking on your ads and it's hard to figure out why.
+    
+    #beta_signup
+      %h2 
+        We are building something for you. Join our beta.
+      
+      %p 
+        We are building a product that let's you 
+        %em sell and spread
+        your Wordpress templates.
+        
+      %p 
+        It will have something to do with 
+        %em an easy way to host your theme
+        with a flavor of
+        %em getting payed from
+        wherever you want and
+        %em a very secret sauce 
+        that will make buyers share your themes.
+      
+      %p Help us, help you and join our beta.
+        
+      %p.cta
+        = link_to "Sign up &raquo;".html_safe, "http://eepurl.com/dVZjX", :class => "large button", :id => "signup_button"
