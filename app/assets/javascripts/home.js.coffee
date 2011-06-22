@@ -12,3 +12,4 @@ $(document).ready ->
     $('#accordion h2').removeClass 'active'
     $(clicked_h2).prev().show()
     $(clicked_h2).addClass 'active'
+    return false
