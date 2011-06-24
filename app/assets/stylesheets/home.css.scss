@@ -33,6 +33,14 @@ body {
 #header_wrapper {
   @include box-shadow(#ddd, 0, 2px, 2px);
   @include background(linear-gradient(#518dbb, darken(#518dbb, 5%)));
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+#content_wrapper {
+  margin-top: 100px;
 }
 
 .container {

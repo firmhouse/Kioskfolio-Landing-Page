@@ -101,62 +101,71 @@ body {
   background: -moz-linear-gradient(#518dbb, #4480ae);
   background: -o-linear-gradient(#518dbb, #4480ae);
   background: linear-gradient(#518dbb, #4480ae);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
 }
 
-/* line 38, ../../app/assets/stylesheets/home.css.scss */
+/* line 42, ../../app/assets/stylesheets/home.css.scss */
+#content_wrapper {
+  margin-top: 100px;
+}
+
+/* line 46, ../../app/assets/stylesheets/home.css.scss */
 .container {
   width: 960px;
   margin: auto;
   min-height: 800px;
 }
 
-/* line 44, ../../app/assets/stylesheets/home.css.scss */
+/* line 52, ../../app/assets/stylesheets/home.css.scss */
 p {
   font-size: 18px;
   margin: 40px 0;
 }
 
-/* line 49, ../../app/assets/stylesheets/home.css.scss */
+/* line 57, ../../app/assets/stylesheets/home.css.scss */
 .center {
   text-align: center;
 }
 
-/* line 53, ../../app/assets/stylesheets/home.css.scss */
+/* line 61, ../../app/assets/stylesheets/home.css.scss */
 #beta_signup {
   width: 600px;
   margin-top: 20px;
   margin: auto;
 }
-/* line 57, ../../app/assets/stylesheets/home.css.scss */
+/* line 65, ../../app/assets/stylesheets/home.css.scss */
 #beta_signup h2 {
   font-size: 20px;
   line-height: 1.5em;
   font-weight: bold;
   margin: 1em 0;
 }
-/* line 63, ../../app/assets/stylesheets/home.css.scss */
+/* line 71, ../../app/assets/stylesheets/home.css.scss */
 #beta_signup p.cta {
   text-align: center;
   margin: 40px 0;
 }
-/* line 67, ../../app/assets/stylesheets/home.css.scss */
+/* line 75, ../../app/assets/stylesheets/home.css.scss */
 #beta_signup p {
   line-height: 1.5em;
   margin: 1em 0;
   color: #444;
 }
-/* line 71, ../../app/assets/stylesheets/home.css.scss */
+/* line 79, ../../app/assets/stylesheets/home.css.scss */
 #beta_signup p em {
   color: #000;
   font-weight: 600;
 }
 
-/* line 78, ../../app/assets/stylesheets/home.css.scss */
+/* line 86, ../../app/assets/stylesheets/home.css.scss */
 #product {
   margin-top: 200px;
   margin-bottom: 100px;
 }
-/* line 81, ../../app/assets/stylesheets/home.css.scss */
+/* line 89, ../../app/assets/stylesheets/home.css.scss */
 #product h2 {
   font-size: 40px;
   color: #666;
@@ -165,7 +174,7 @@ p {
   text-align: center;
   margin-bottom: 20px;
 }
-/* line 90, ../../app/assets/stylesheets/home.css.scss */
+/* line 98, ../../app/assets/stylesheets/home.css.scss */
 #product .benefits {
   background-color: #FFF;
   -moz-border-radius: 5px;
@@ -180,7 +189,7 @@ p {
   box-shadow: 0 2px 1px rgba(0, 0, 0, 0.05);
   border: 1px solid #eee;
 }
-/* line 96, ../../app/assets/stylesheets/home.css.scss */
+/* line 104, ../../app/assets/stylesheets/home.css.scss */
 #product .benefit {
   text-align: center;
   display: -moz-inline-box;
@@ -193,7 +202,7 @@ p {
   margin-top: 20px;
   width: 280px;
 }
-/* line 98, ../../app/assets/stylesheets/home.css.scss */
+/* line 106, ../../app/assets/stylesheets/home.css.scss */
 #product .benefit h3 {
   font-weight: bold;
   height: 40px;
@@ -204,7 +213,7 @@ p {
 #product .benefit {
   *display: inline;
 }
-/* line 109, ../../app/assets/stylesheets/home.css.scss */
+/* line 117, ../../app/assets/stylesheets/home.css.scss */
 #product .benefit p {
   margin: 1em 0;
   text-align: left;
@@ -212,17 +221,17 @@ p {
   font-size: 15px;
   color: #222;
 }
-/* line 116, ../../app/assets/stylesheets/home.css.scss */
+/* line 124, ../../app/assets/stylesheets/home.css.scss */
 #product .benefit:first-child {
   margin-left: 20px;
 }
 
-/* line 122, ../../app/assets/stylesheets/home.css.scss */
+/* line 130, ../../app/assets/stylesheets/home.css.scss */
 #accordion {
   text-align: center;
   margin-bottom: 10px;
 }
-/* line 124, ../../app/assets/stylesheets/home.css.scss */
+/* line 132, ../../app/assets/stylesheets/home.css.scss */
 #accordion .problem {
   background-color: #FFF;
   width: 400px;
@@ -250,11 +259,11 @@ p {
 #accordion .problem {
   *display: inline;
 }
-/* line 131, ../../app/assets/stylesheets/home.css.scss */
+/* line 139, ../../app/assets/stylesheets/home.css.scss */
 #accordion .problem:last-child, #accordion .problem .last {
   margin-right: 0;
 }
-/* line 139, ../../app/assets/stylesheets/home.css.scss */
+/* line 147, ../../app/assets/stylesheets/home.css.scss */
 #accordion h2 {
   font-weight: bold;
   font-size: 14px;
@@ -269,7 +278,7 @@ p {
   background-image: -o-linear-gradient(top, #f0f0f0, #e0e0e0);
   background-image: linear-gradient(top, #f0f0f0, #e0e0e0);
 }
-/* line 147, ../../app/assets/stylesheets/home.css.scss */
+/* line 155, ../../app/assets/stylesheets/home.css.scss */
 #accordion h2 a {
   display: block;
   padding: 20px;
@@ -277,62 +286,62 @@ p {
   color: #333;
   text-shadow: white 0 1px 0;
 }
-/* line 154, ../../app/assets/stylesheets/home.css.scss */
+/* line 162, ../../app/assets/stylesheets/home.css.scss */
 #accordion h2:last-child {
   border-bottom: 0;
 }
-/* line 157, ../../app/assets/stylesheets/home.css.scss */
+/* line 165, ../../app/assets/stylesheets/home.css.scss */
 #accordion h2.active {
   background: none;
   font-size: 18px;
   border-bottom: 1px solid #d1e1ed;
 }
-/* line 158, ../../app/assets/stylesheets/home.css.scss */
+/* line 166, ../../app/assets/stylesheets/home.css.scss */
 #accordion h2.active a {
   color: #000;
 }
-/* line 164, ../../app/assets/stylesheets/home.css.scss */
+/* line 172, ../../app/assets/stylesheets/home.css.scss */
 #accordion h2.active:last-child {
   border: 0;
 }
-/* line 168, ../../app/assets/stylesheets/home.css.scss */
+/* line 176, ../../app/assets/stylesheets/home.css.scss */
 #accordion h2.active:hover a {
   color: #000;
 }
-/* line 174, ../../app/assets/stylesheets/home.css.scss */
+/* line 182, ../../app/assets/stylesheets/home.css.scss */
 #accordion h2:hover a {
   color: #518dbb;
 }
-/* line 181, ../../app/assets/stylesheets/home.css.scss */
+/* line 189, ../../app/assets/stylesheets/home.css.scss */
 #accordion .element {
   padding: 10px;
   text-align: center;
 }
 
-/* line 187, ../../app/assets/stylesheets/home.css.scss */
+/* line 195, ../../app/assets/stylesheets/home.css.scss */
 .learn_more {
   position: absolute;
   bottom: 30px;
   left: 90px;
 }
 
-/* line 193, ../../app/assets/stylesheets/home.css.scss */
+/* line 201, ../../app/assets/stylesheets/home.css.scss */
 p.center {
   text-align: center;
 }
 
-/* line 197, ../../app/assets/stylesheets/home.css.scss */
+/* line 205, ../../app/assets/stylesheets/home.css.scss */
 #to_product {
   margin-top: 60px;
   font-size: 20px;
 }
 
-/* line 202, ../../app/assets/stylesheets/home.css.scss */
+/* line 210, ../../app/assets/stylesheets/home.css.scss */
 #to_product .button {
   margin-left: 20px;
 }
 
-/* line 206, ../../app/assets/stylesheets/home.css.scss */
+/* line 214, ../../app/assets/stylesheets/home.css.scss */
 .button {
   -moz-border-radius: 20px;
   -webkit-border-radius: 20px;
@@ -356,7 +365,7 @@ p.center {
   -o-box-shadow: inset 0 0 1px white;
   box-shadow: inset 0 0 1px white;
 }
-/* line 216, ../../app/assets/stylesheets/home.css.scss */
+/* line 224, ../../app/assets/stylesheets/home.css.scss */
 .button:hover {
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffb453), color-stop(100%, #ff9306));
   background: -webkit-linear-gradient(#ffb453, #ff9306);
@@ -364,7 +373,7 @@ p.center {
   background: -o-linear-gradient(#ffb453, #ff9306);
   background: linear-gradient(#ffb453, #ff9306);
 }
-/* line 219, ../../app/assets/stylesheets/home.css.scss */
+/* line 227, ../../app/assets/stylesheets/home.css.scss */
 .button.large {
   font-size: 22px;
 }
