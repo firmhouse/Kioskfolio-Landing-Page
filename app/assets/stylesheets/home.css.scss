@@ -15,13 +15,14 @@ body {
 
 #header {
   width: 960px;
-  padding: 20px 0;
+  padding: 10px 0;
   margin: auto;
 }
 
 #tagline {
   font-weight: bold;
   font-size: 30px;
+  text-align: center;
   margin: 30px 0;
 }
 
@@ -39,10 +40,19 @@ body {
   margin: auto;
 }
 
+p {
+  font-size: 18px;
+  margin: 40px 0;
+}
+
+.center {
+  text-align: center;
+}
+
 #beta_signup {
-  width: 400px;
-  @include inline-block;
-  vertical-align: top;
+  width: 600px;
+  margin-top: 20px;
+  margin: auto;
   h2 {
     font-size: 20px;
     line-height: 1.5em;
@@ -64,27 +74,80 @@ body {
   }
 }
 
+#product {
+  margin-top: 200px;
+  margin-bottom: 100px;
+  h2 {
+    font-size: 40px;
+    color: #666;
+    @include text-shadow(#222, 0, -1px, 1px);
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .benefits {
+    background-color: #FFF; 
+    @include border-radius;
+    @include box-shadow(rgba(0,0,0,0.05), 0, 2px, 1px);
+    border: 1px solid #eee;
+  }
+  .benefit {
+    text-align: center;
+    h3 {
+      font-weight: bold;
+      height: 40px;
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+    @include inline-block;
+    vertical-align: top;
+    margin-right: 20px;
+    margin-top: 20px;
+    width: 280px;
+    p {
+      margin: 1em 0;
+      text-align: left;
+      line-height: 1.4em;
+      font-size: 15px;
+      color: #222;
+    }
+    &:first-child {
+      margin-left: 20px;
+    }
+  }
+}
+
 #accordion {
-  background-color: #FFF;
-  width: 500px;
-  /* @include box-shadow(rgba(0,0,0,0.2), 0, 0, 15px, false, inset); */
-  border: 1px solid #ddd;
-  @include border-radius;
-  overflow: hidden;
+  text-align: center;
+  .problem {
+    background-color: #FFF;
+    width: 400px;
+    @include inline-block;
+    border: 1px solid #ddd;
+    @include border-radius;
+    margin-right: 30px;
+    &:last-child, .last {
+      margin-right: 0;
+    };
+    height: 300px;
+    position: relative;
+    @include box-shadow(rgba(0,0,0,0.05), 0, 2px, 2px);
+  }
   margin-bottom: 10px;
-  @include inline-block;
-  margin-right: 50px;
   h2 {
     font-weight: bold;
     font-size: 14px;
+    position: absolute;
+    bottom: 0;
     margin: 0;
-    line-height: 1.3em;
-    border-bottom: 1px solid lighten(#518dbb, 35%);
+    height: 100px;
+    line-height: 1.5em;
     a {
       display: block;
       padding: 20px;
       text-decoration: none;
-      color: lighten(#518dbb, 25%);
+      color: #333;
       @include text-shadow(#FFF, 0, 1px, 0);
     }
     &:last-child {
@@ -112,37 +175,11 @@ body {
       }
     }
 
-    @include linear-gradient(color-stops(lighten(#518dbb, 45%), lighten(#518dbb, 40%)));
+    @include linear-gradient(color-stops(#f0f0f0, #e0e0e0));
   }
   .element {
-    padding: 20px;
+    padding: 10px;
     text-align: center;
-    img {
-      margin-top: 20px;
-    }
-  }
-}
-
-.problem {
-  position: relative;
-  background-color: #FFF;
-  margin-right: 20px;
-  border: 6px solid #eee;
-  @include box-shadow(rgba(0,0,0,0.1), 0, 2px, 2px);
-  height: 220px;
-  width: 280px;
-  h2 {
-    margin-bottom: 20px;
-    font-size: 20px;
-    letter-spacing: -.5px;
-  }
-  text-align: center;
-  @include inline-block;
-  padding: 20px;
-  background-color: #FFF;
-  vertical-align: top;
-  &:last-child {
-    margin-right: 0;
   }
 }
 
@@ -152,18 +189,31 @@ body {
   left: 90px;
 }
 
+p.center {
+  text-align: center;
+}
+
+#to_product {
+  margin-top: 60px;
+  font-size: 20px;
+}
+
+#to_product .button {
+  margin-left: 20px;
+}
+
 .button {
-  @include border-radius(6px);
+  @include border-radius(20px);
   border: 1px solid darken(#ec8500, 5%);
-  @include background(linear-gradient(color-stops(#ec8500, darken(#ec8500, 5%))));
-  padding: 8px 12px;
+  @include background(linear-gradient(color-stops(lighten(#ec8500, 15%), #ec8500)));
+  padding: 8px 14px;
   font-weight: bold;
   color: darken(#5e9a00, 30%);
   @include text-shadow(rgba(255,255,255,0.4), 0, 1px, 1px);
   text-decoration: none;
   @include box-shadow(#FFF,0,0,1px, false, inset);
   &:hover {
-    @include background(linear-gradient(color-stops(lighten(#ec8500, 10%), #ec8500)));
+    @include background(linear-gradient(color-stops(lighten(#ec8500, 20%), lighten(#ec8500, 5%))));
   };
   &.large {
     font-size: 22px;

@@ -10,28 +10,79 @@
   .container
   
     %div#tagline
-      %h1 Helping you sell and market your Wordpress templates.
+      %h1 Helping you easily sell and market your Wordpress templates.
     
     #accordion
-      .element= image_tag "you.png", :alt => "Template designer / developer / creator that is surfing."
-      %h2.active= link_to  "You: You are an awesome template creator and you may or may not look like the person in this picture.", "#", :id => "you_template_creator"
+    
+      .problem
       
-      .element= image_tag "forest_hello.png", :alt => "Image reflecting a forest with a lost cry for help."
-      %h2= link_to "Problem: The online marketplace you're on doesn't let you promote your personal brand enough.", "#", :id => "problem_brand"
-      
-      .element= image_tag "adwords_conversion.png", :alt => "Image showing an Adwords ad pointing no conversion to selling a theme."
-      %h2= link_to "Problem: People aren't clicking on your ads and it's hard to figure out why.", "#", :id => "problem_adwords"
-      
-    #beta_signup
-      %h2 
-        We are building something for you. Join our beta.
-      
-      %p 
-        We are building a product that let's you 
-        %em market and sell your Wordpress templates
-        without having to use a marketplace or ads.
-      
-      %p Help us, help you and join our beta.
+        .element= image_tag "forest_hello.png", :alt => "Image reflecting a forest with a lost cry for help."
+        %h2= link_to "You are on a marketplace with 1000s of sellers but you also want to build your own brand and reputation.", "#", :id => "problem_brand"
         
-      %p.cta
-        = link_to "Join our beta &raquo;".html_safe, "http://eepurl.com/dVZjX", :class => "large button", :id => "join_our_beta"
+      .problem.last
+      
+        .element= image_tag "adwords_conversion.png", :alt => "Image showing an Adwords ad pointing no conversion to selling a theme."
+        %h2= link_to "You don't know how to get more people to buy your themes or what ads and promotion works best.", "#", :id => "problem_adwords"
+    
+    %p#to_product.center
+      We are building something for you. 
+      = link_to_function "The Product &raquo;".html_safe, "$('body').animate({'scrollTop': $('#product').offset().top - 30});", :class => "button"
+      
+
+  #product.container
+    
+    %h2 The Product
+    
+    .benefits
+    
+      .benefit
+        %h3 Host your templates, create your portfolio
+        
+        = image_tag "product_info/theme_account.png"
+        
+        %p
+          After you create your account, you can add and upload the templates you want to sell.
+        
+        %p 
+          Kioskfolio will 
+          %strong host all the files 
+          and make sure that customer's who bought your template 
+          %strong can always access them.
+        
+      .benefit
+        %h3 Easily integrate selling and get payed without waiting
+        
+        = image_tag "product_info/scripts.png"
+        
+        %p
+          No-fuzz tools allow you to
+          %strong easily integrate the selling process into
+          your website or anywhere you'd like. No deep programming knowledge
+          required.
+        
+        %p
+          We take care of authorizing your customer and make sure you
+          %strong get payed directly when
+          a customer buys your template. 
+        
+        %p{:style => "text-align: center;"}
+          %strong No waiting or virtual credits.
+          
+      .benefit
+        %h3 We make your templates go viral and increase exposure
+        
+        = image_tag "product_info/buyer_share.png"
+        
+        %p 
+          By 
+          %strong providing rewards and discounts
+          the buyer won't think twice to spread
+          a sale.
+    
+        %p 
+          Get informative statistics and tips
+          %strong to increase the conversion of your templates.
+  
+      %p{:style => "text-align: center;"} 
+        We will need your email to get you started.
+        = link_to "Leave my email &raquo;".html_safe, "http://eepurl.com/dVZjX", :class => "button", :style => "margin-left: 20px;"
