@@ -26,7 +26,7 @@
     
     %p#to_product.center
       We are building something for you. 
-      = link_to_function "The Product &raquo;".html_safe, "$('body').animate({'scrollTop': $('#product').offset().top - 30});", :class => "button"
+      = link_to_function "The Product &raquo;".html_safe, "$('body').animate({'scrollTop': $('#product').offset().top - 30});", :class => "button", :id => "learn_product"
       
 
   #product.container
@@ -85,4 +85,4 @@
   
       %p{:style => "text-align: center; border-top: 2px dotted #ddd; margin: 0; padding: 30px 0"} 
         We will need your email to get you started.
-        = link_to "Leave my email &raquo;".html_safe, "http://eepurl.com/dVZjX", :class => "button", :style => "margin-left: 20px;"
+        = link_to "Leave my email &raquo;".html_safe, "http://eepurl.com/dVZjX", :class => "button", :id => "leave_my_email", :style => "margin-left: 20px;"
