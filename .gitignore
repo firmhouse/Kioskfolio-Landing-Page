@@ -3,7 +3,4 @@ db/*.sqlite3
 log/*.log
 tmp/
 .sass-cache/
-
-app/assets/images/you.psd
-
-app/assets/images/trees.psd
+app/assets/images/*.psd
