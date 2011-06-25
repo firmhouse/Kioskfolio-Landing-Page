@@ -228,3 +228,47 @@ p.center {
     font-size: 22px;
   }
 }
+
+#mc_embed_signup {
+  text-align: center;
+  margin-bottom: 20px;
+  .mc-field-group, .mc-submit-group {
+    @include inline-block;
+  }
+  .mc-field-group {
+    position: relative;
+    height: 35px;
+    width: 300px;
+    @include box-shadow(#bbb, 0, 1px, 2px, false, inset);
+    border: 1px solid #b0b0b0;
+    label {
+      position: absolute;
+      top: 0;
+      @include inline-block;
+      margin: 8px;
+      font-size: 18px;
+      cursor: text;
+      z-index: 1;
+      color: #666;
+    }
+    input {
+      position: absolute;
+      top: 0;
+      width: 290px;
+      padding: 5px;
+      font-size: 18px;
+      @include appearance(none);
+      outline: none;
+      border: 0;
+      background: 0;
+      z-index: 2;
+    }
+  }
+  .mc-submit-group input {
+    padding: 8px 14px;
+    font-family: "Helvetica";
+    margin-left: 20px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+}
