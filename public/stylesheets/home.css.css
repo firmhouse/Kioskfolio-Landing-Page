@@ -370,13 +370,22 @@ p.center {
 .button.large {
   font-size: 22px;
 }
+/* line 220, ../../app/assets/stylesheets/home.css.scss */
+.button:disabled, .button.disabled {
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f0f0f0), color-stop(100%, #cccccc));
+  background: -webkit-linear-gradient(#f0f0f0, #cccccc);
+  background: -moz-linear-gradient(#f0f0f0, #cccccc);
+  background: -o-linear-gradient(#f0f0f0, #cccccc);
+  background: linear-gradient(#f0f0f0, #cccccc);
+  border-color: #ccc;
+}
 
-/* line 222, ../../app/assets/stylesheets/home.css.scss */
+/* line 226, ../../app/assets/stylesheets/home.css.scss */
 #mc_embed_signup {
   text-align: center;
   margin-bottom: 20px;
 }
-/* line 225, ../../app/assets/stylesheets/home.css.scss */
+/* line 229, ../../app/assets/stylesheets/home.css.scss */
 #mc_embed_signup .mc-field-group, #mc_embed_signup .mc-submit-group {
   display: -moz-inline-box;
   -moz-box-orient: vertical;
@@ -388,7 +397,7 @@ p.center {
 #mc_embed_signup .mc-field-group, #mc_embed_signup .mc-submit-group {
   *display: inline;
 }
-/* line 228, ../../app/assets/stylesheets/home.css.scss */
+/* line 232, ../../app/assets/stylesheets/home.css.scss */
 #mc_embed_signup .mc-field-group {
   position: relative;
   height: 35px;
@@ -399,7 +408,16 @@ p.center {
   box-shadow: inset 0 1px 2px #bbbbbb;
   border: 1px solid #b0b0b0;
 }
-/* line 234, ../../app/assets/stylesheets/home.css.scss */
+/* line 235, ../../app/assets/stylesheets/home.css.scss */
+#mc_embed_signup .mc-field-group.active {
+  background-color: #ffffcc;
+}
+/* line 237, ../../app/assets/stylesheets/home.css.scss */
+#mc_embed_signup .mc-field-group.active label {
+  color: rgba(0, 0, 0, 0.3);
+  text-shadow: none;
+}
+/* line 245, ../../app/assets/stylesheets/home.css.scss */
 #mc_embed_signup .mc-field-group label {
   position: absolute;
   top: 0;
@@ -419,7 +437,7 @@ p.center {
 #mc_embed_signup .mc-field-group label {
   *display: inline;
 }
-/* line 245, ../../app/assets/stylesheets/home.css.scss */
+/* line 256, ../../app/assets/stylesheets/home.css.scss */
 #mc_embed_signup .mc-field-group input {
   position: absolute;
   top: 0;
@@ -435,7 +453,7 @@ p.center {
   background: 0;
   z-index: 2;
 }
-/* line 259, ../../app/assets/stylesheets/home.css.scss */
+/* line 270, ../../app/assets/stylesheets/home.css.scss */
 #mc_embed_signup .mc-submit-group input {
   padding: 8px 14px;
   font-family: "Helvetica";

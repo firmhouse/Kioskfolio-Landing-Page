@@ -217,6 +217,10 @@ p.center {
   &.large {
     font-size: 22px;
   }
+  &:disabled, &.disabled {
+    @include background(linear-gradient(color-stops(#f0f0f0, #ccc)));
+    border-color: #ccc;
+  }
 }
 
 #mc_embed_signup {
@@ -228,6 +232,13 @@ p.center {
   .mc-field-group {
     position: relative;
     height: 35px;
+    &.active {
+      background-color: lighten(yellow, 40%);
+      label {
+        color: rgba(0,0,0,0.3);
+        @include text-shadow(none);
+      }
+    }
     width: 300px;
     @include box-shadow(#bbb, 0, 1px, 2px, false, inset);
     border: 1px solid #b0b0b0;
