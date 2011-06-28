@@ -9,7 +9,7 @@ $(document).ready ->
   $(".mc-field-group input").blur ->
     $(this).prev().show() if $(this).val().length == 0
     
-  $('#learn_product').click ->
+  $('#learn_product, #beta_invite a').click ->
     scrollPosition = $('#product').offset().top - 100
     $('body').animate({"scrollTop": scrollPosition})
     $('html').animate({"scrollTop": scrollPosition})
