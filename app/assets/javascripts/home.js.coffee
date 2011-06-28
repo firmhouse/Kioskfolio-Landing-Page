@@ -14,3 +14,7 @@ $(document).ready ->
     $('body').animate({"scrollTop": scrollPosition})
     $('html').animate({"scrollTop": scrollPosition})
     return false
+    
+  $('#home').click ->
+    $('body, html').animate({"scrollTop": 0})
+    return false
