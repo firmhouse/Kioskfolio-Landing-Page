@@ -93,7 +93,7 @@ p {
   }
 }
 
-#product {
+#product, #signup {
   margin-top: 100px;
   margin-bottom: 20px;
   h2 {
@@ -227,9 +227,12 @@ p.center {
     font-size: 22px;
   }
   &:disabled, &.disabled {
-    @include background(linear-gradient(color-stops(#f0f0f0, #ccc)));
-    border-color: #ccc;
-    color: #999;
+    @include background(linear-gradient(color-stops(lighten(#ec8500, 40%), lighten(#ec8500, 30%))));
+    border-color: lighten(#ec8500, 30%);
+    color: #666;
+    &:hover {
+      color: #000;
+    }
   }
 }
 
@@ -242,10 +245,11 @@ p.center {
   .mc-field-group {
     position: relative;
     height: 35px;
+    background-color: #FFF;
     &.active {
       background-color: lighten(yellow, 40%);
       label {
-        color: rgba(0,0,0,0.3);
+        color: #333;
         @include text-shadow(none);
       }
     }
