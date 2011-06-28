@@ -40,13 +40,23 @@ body {
 }
 
 #content_wrapper {
-  margin-top: 100px;
+  border-top: 1px solid #eee;
+  margin-bottom: 50px;
+  &.first {
+    border-top: 0;
+    margin-top: 100px;
+  }
+  &.product {
+    background-color: rgba(0,0,0,0.02);
+    @include box-shadow(#bbb, 0, 0px, 10px, false, inset);
+    margin-bottom: 0;
+  }
 }
 
 .container {
   width: 960px;
   margin: auto;
-  min-height: 800px;
+  min-height: 500px;
 }
 
 p {
@@ -84,7 +94,7 @@ p {
 }
 
 #product {
-  margin-top: 200px;
+  margin-top: 100px;
   margin-bottom: 100px;
   h2 {
     font-size: 40px;
