@@ -220,6 +220,7 @@ p.center {
   &:disabled, &.disabled {
     @include background(linear-gradient(color-stops(#f0f0f0, #ccc)));
     border-color: #ccc;
+    color: #999;
   }
 }
 
@@ -273,5 +274,6 @@ p.center {
     margin-left: 20px;
     font-size: 18px;
     cursor: pointer;
+    @include text-shadow(rgba(255,255,255,0.4), 0, 1px, 0);
   }
 }
