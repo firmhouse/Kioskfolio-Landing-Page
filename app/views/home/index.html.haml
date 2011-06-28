@@ -26,7 +26,7 @@
     
     %p#to_product.center
       We are building something for you. 
-      = link_to_function "The Product &raquo;".html_safe, "$('body').animate({'scrollTop': $('#product').offset().top - 100});", :class => "button", :id => "learn_product"
+      = link_to "The Product &raquo;".html_safe, "#the_product", :class => "button", :id => "learn_product"
       
 
   #product.container
