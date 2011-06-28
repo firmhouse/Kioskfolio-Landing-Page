@@ -244,6 +244,7 @@ p.center {
     label {
       position: absolute;
       top: 0;
+      left: 0;
       @include inline-block;
       margin: 8px;
       font-size: 18px;
@@ -254,6 +255,7 @@ p.center {
     input {
       position: absolute;
       top: 0;
+      left: 0;
       width: 290px;
       padding: 5px;
       font-size: 18px;

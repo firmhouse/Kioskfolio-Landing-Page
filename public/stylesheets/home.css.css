@@ -410,6 +410,7 @@ p.center {
 #mc_embed_signup .mc-field-group label {
   position: absolute;
   top: 0;
+  left: 0;
   display: -moz-inline-box;
   -moz-box-orient: vertical;
   display: inline-block;
@@ -425,10 +426,11 @@ p.center {
 #mc_embed_signup .mc-field-group label {
   *display: inline;
 }
-/* line 254, ../../app/assets/stylesheets/home.css.scss */
+/* line 255, ../../app/assets/stylesheets/home.css.scss */
 #mc_embed_signup .mc-field-group input {
   position: absolute;
   top: 0;
+  left: 0;
   width: 290px;
   padding: 5px;
   font-size: 18px;
@@ -440,7 +442,7 @@ p.center {
   background: 0;
   z-index: 2;
 }
-/* line 267, ../../app/assets/stylesheets/home.css.scss */
+/* line 269, ../../app/assets/stylesheets/home.css.scss */
 #mc_embed_signup .mc-submit-group input {
   padding: 8px 14px;
   font-family: "Helvetica";
