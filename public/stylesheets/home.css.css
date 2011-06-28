@@ -168,13 +168,12 @@ p {
 /* line 89, ../../app/assets/stylesheets/home.css.scss */
 #product h2 {
   font-size: 40px;
-  color: #666;
-  text-shadow: #222222 0 -1px 1px;
+  color: #222;
   font-weight: bold;
   text-align: center;
   margin-bottom: 20px;
 }
-/* line 98, ../../app/assets/stylesheets/home.css.scss */
+/* line 97, ../../app/assets/stylesheets/home.css.scss */
 #product .benefits {
   background-color: #FFF;
   -moz-border-radius: 5px;
@@ -189,7 +188,7 @@ p {
   box-shadow: 0 2px 1px rgba(0, 0, 0, 0.05);
   border: 1px solid #eee;
 }
-/* line 104, ../../app/assets/stylesheets/home.css.scss */
+/* line 103, ../../app/assets/stylesheets/home.css.scss */
 #product .benefit {
   text-align: center;
   display: -moz-inline-box;
@@ -202,7 +201,7 @@ p {
   margin-top: 20px;
   width: 280px;
 }
-/* line 106, ../../app/assets/stylesheets/home.css.scss */
+/* line 105, ../../app/assets/stylesheets/home.css.scss */
 #product .benefit h3 {
   font-weight: bold;
   height: 40px;
@@ -213,7 +212,7 @@ p {
 #product .benefit {
   *display: inline;
 }
-/* line 117, ../../app/assets/stylesheets/home.css.scss */
+/* line 116, ../../app/assets/stylesheets/home.css.scss */
 #product .benefit p {
   margin: 1em 0;
   text-align: left;
@@ -221,17 +220,17 @@ p {
   font-size: 15px;
   color: #222;
 }
-/* line 124, ../../app/assets/stylesheets/home.css.scss */
+/* line 123, ../../app/assets/stylesheets/home.css.scss */
 #product .benefit:first-child {
   margin-left: 20px;
 }
 
-/* line 130, ../../app/assets/stylesheets/home.css.scss */
+/* line 129, ../../app/assets/stylesheets/home.css.scss */
 #accordion {
   text-align: center;
   margin-bottom: 10px;
 }
-/* line 132, ../../app/assets/stylesheets/home.css.scss */
+/* line 131, ../../app/assets/stylesheets/home.css.scss */
 #accordion .problem {
   background-color: #FFF;
   width: 400px;
@@ -259,11 +258,11 @@ p {
 #accordion .problem {
   *display: inline;
 }
-/* line 139, ../../app/assets/stylesheets/home.css.scss */
+/* line 138, ../../app/assets/stylesheets/home.css.scss */
 #accordion .problem:last-child, #accordion .problem .last {
   margin-right: 0;
 }
-/* line 147, ../../app/assets/stylesheets/home.css.scss */
+/* line 146, ../../app/assets/stylesheets/home.css.scss */
 #accordion h2 {
   font-weight: bold;
   font-size: 14px;
@@ -278,7 +277,7 @@ p {
   background-image: -o-linear-gradient(top, #f0f0f0, #e0e0e0);
   background-image: linear-gradient(top, #f0f0f0, #e0e0e0);
 }
-/* line 155, ../../app/assets/stylesheets/home.css.scss */
+/* line 154, ../../app/assets/stylesheets/home.css.scss */
 #accordion h2 a {
   display: block;
   padding: 20px;
@@ -286,62 +285,62 @@ p {
   color: #333;
   text-shadow: white 0 1px 0;
 }
-/* line 162, ../../app/assets/stylesheets/home.css.scss */
+/* line 161, ../../app/assets/stylesheets/home.css.scss */
 #accordion h2:last-child {
   border-bottom: 0;
 }
-/* line 165, ../../app/assets/stylesheets/home.css.scss */
+/* line 164, ../../app/assets/stylesheets/home.css.scss */
 #accordion h2.active {
   background: none;
   font-size: 18px;
   border-bottom: 1px solid #d1e1ed;
 }
-/* line 166, ../../app/assets/stylesheets/home.css.scss */
+/* line 165, ../../app/assets/stylesheets/home.css.scss */
 #accordion h2.active a {
   color: #000;
 }
-/* line 172, ../../app/assets/stylesheets/home.css.scss */
+/* line 171, ../../app/assets/stylesheets/home.css.scss */
 #accordion h2.active:last-child {
   border: 0;
 }
-/* line 176, ../../app/assets/stylesheets/home.css.scss */
+/* line 175, ../../app/assets/stylesheets/home.css.scss */
 #accordion h2.active:hover a {
   color: #000;
 }
-/* line 182, ../../app/assets/stylesheets/home.css.scss */
+/* line 181, ../../app/assets/stylesheets/home.css.scss */
 #accordion h2:hover a {
   color: #518dbb;
 }
-/* line 189, ../../app/assets/stylesheets/home.css.scss */
+/* line 188, ../../app/assets/stylesheets/home.css.scss */
 #accordion .element {
   padding: 10px;
   text-align: center;
 }
 
-/* line 195, ../../app/assets/stylesheets/home.css.scss */
+/* line 194, ../../app/assets/stylesheets/home.css.scss */
 .learn_more {
   position: absolute;
   bottom: 30px;
   left: 90px;
 }
 
-/* line 201, ../../app/assets/stylesheets/home.css.scss */
+/* line 200, ../../app/assets/stylesheets/home.css.scss */
 p.center {
   text-align: center;
 }
 
-/* line 205, ../../app/assets/stylesheets/home.css.scss */
+/* line 204, ../../app/assets/stylesheets/home.css.scss */
 #to_product {
   margin-top: 60px;
   font-size: 20px;
 }
 
-/* line 210, ../../app/assets/stylesheets/home.css.scss */
+/* line 209, ../../app/assets/stylesheets/home.css.scss */
 #to_product .button {
   margin-left: 20px;
 }
 
-/* line 214, ../../app/assets/stylesheets/home.css.scss */
+/* line 213, ../../app/assets/stylesheets/home.css.scss */
 .button {
   -moz-border-radius: 20px;
   -webkit-border-radius: 20px;
@@ -365,7 +364,7 @@ p.center {
   -o-box-shadow: inset 0 0 1px white;
   box-shadow: inset 0 0 1px white;
 }
-/* line 224, ../../app/assets/stylesheets/home.css.scss */
+/* line 223, ../../app/assets/stylesheets/home.css.scss */
 .button:hover {
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffb453), color-stop(100%, #ff9306));
   background: -webkit-linear-gradient(#ffb453, #ff9306);
@@ -373,17 +372,17 @@ p.center {
   background: -o-linear-gradient(#ffb453, #ff9306);
   background: linear-gradient(#ffb453, #ff9306);
 }
-/* line 227, ../../app/assets/stylesheets/home.css.scss */
+/* line 226, ../../app/assets/stylesheets/home.css.scss */
 .button.large {
   font-size: 22px;
 }
 
-/* line 232, ../../app/assets/stylesheets/home.css.scss */
+/* line 231, ../../app/assets/stylesheets/home.css.scss */
 #mc_embed_signup {
   text-align: center;
   margin-bottom: 20px;
 }
-/* line 235, ../../app/assets/stylesheets/home.css.scss */
+/* line 234, ../../app/assets/stylesheets/home.css.scss */
 #mc_embed_signup .mc-field-group, #mc_embed_signup .mc-submit-group {
   display: -moz-inline-box;
   -moz-box-orient: vertical;
@@ -395,7 +394,7 @@ p.center {
 #mc_embed_signup .mc-field-group, #mc_embed_signup .mc-submit-group {
   *display: inline;
 }
-/* line 238, ../../app/assets/stylesheets/home.css.scss */
+/* line 237, ../../app/assets/stylesheets/home.css.scss */
 #mc_embed_signup .mc-field-group {
   position: relative;
   height: 35px;
@@ -406,7 +405,7 @@ p.center {
   box-shadow: inset 0 1px 2px #bbbbbb;
   border: 1px solid #b0b0b0;
 }
-/* line 244, ../../app/assets/stylesheets/home.css.scss */
+/* line 243, ../../app/assets/stylesheets/home.css.scss */
 #mc_embed_signup .mc-field-group label {
   position: absolute;
   top: 0;
@@ -426,7 +425,7 @@ p.center {
 #mc_embed_signup .mc-field-group label {
   *display: inline;
 }
-/* line 255, ../../app/assets/stylesheets/home.css.scss */
+/* line 254, ../../app/assets/stylesheets/home.css.scss */
 #mc_embed_signup .mc-field-group input {
   position: absolute;
   top: 0;
@@ -442,7 +441,7 @@ p.center {
   background: 0;
   z-index: 2;
 }
-/* line 269, ../../app/assets/stylesheets/home.css.scss */
+/* line 268, ../../app/assets/stylesheets/home.css.scss */
 #mc_embed_signup .mc-submit-group input {
   padding: 8px 14px;
   font-family: "Helvetica";
