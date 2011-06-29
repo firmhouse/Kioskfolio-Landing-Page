@@ -47,7 +47,8 @@ $(document).ready ->
   
   optimizely = optimizely || []
   
-  $('#mc_embed_signup').submit ->
-    optimizely.push(['trackEvent', 'email_form_submitted'])
+  $('#mc-embedded-subscribe-form').submit ->
+    optimizely.push(['trackEvent', 'email_form_submitted']);
+    return
     
   return
