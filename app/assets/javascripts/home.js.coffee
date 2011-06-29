@@ -44,3 +44,8 @@ $(document).ready ->
       $('#mc-embedded-subscribe').addClass('disabled')
     
   $('#mc-embedded-subscribe').addClass('disabled')
+  
+  optimizely = optimizely || []
+  
+  $('#mc_embed_signup').submit ->
+    optimizely.push(['trackEvent', 'email_form_submitted'])
