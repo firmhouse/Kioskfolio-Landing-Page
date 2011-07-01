@@ -25,7 +25,7 @@ $(document).ready ->
     $('#mce-EMAIL').focus()
     return false
     
-  $('#home').click ->
+  $('#home_js').click ->
     $('body, html').animate({"scrollTop": 0})
     return false
     

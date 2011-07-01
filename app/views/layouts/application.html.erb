@@ -45,7 +45,7 @@
     <div id="header">
 
       <div id="logo">
-        <%= link_to image_tag("logo_for_header.png", :alt => "Kioskfolio Logo"), "#home", :id => "home", :style => "border: 0;" %>
+        <%= link_to image_tag("logo_for_header.png", :alt => "Kioskfolio Logo"), root_path, :id => controller.action_name == "index" ? "home_js" : "home", :style => "border: 0;" %>
       </div>
       
       <div id="menu">
