@@ -1,0 +1,48 @@
+#content_wrapper.wrapper.first
+
+  .container
+  
+    %h2{:style => "text-align: center; font-weight: bold; font-size: 36px; color: #555;"} Features
+    
+    %p{:style => "text-align: center; font-size: 18px; margin: 20px auto; width: 700px; line-height: 1.6em;"} 
+      We are building our first version and would like to involve you in the process. Take a look at these sketches to see what it's going to look like.
+      
+    %p{:style => "text-align: center;font-size: 12px;"} (Click on the images for a bigger view)
+    
+    %p.feature_images{:style => "text-align: center;"}
+      :erb
+        <a href="http://www.flickr.com/photos/michielsikkes/5890884300/" title="Kioskfolio Wordpress seller flow by michiels, on Flickr"><img src="http://farm7.static.flickr.com/6013/5890884300_9da54d4882.jpg" width="375" height="500" alt="Kioskfolio Wordpress seller flow"></a>
+        &nbsp;
+        <a href="http://www.flickr.com/photos/michielsikkes/5890884498/" title="Kioskfolio Buyer Flow by michiels, on Flickr"><img src="http://farm7.static.flickr.com/6037/5890884498_ae51bc5019.jpg" width="375" height="500" alt="Kioskfolio Buyer Flow"></a>
+        
+    #signup.container{:style => "min-height: 0; margin-top: 0; margin-bottom: 200px;"}
+
+      .benefits
+
+        %p{:style => "text-align: center; margin: 0; padding: 20px 0"} 
+          :erb
+            <!-- Begin MailChimp Signup Form -->
+            <script type="text/javascript">
+            // delete this script tag and use a "div.mce_inline_error{ XXX !important}" selector
+            // or fill this in and it will be inlined when errors are generated
+            var mc_custom_error_style = '';
+            </script>
+            <div id="mc_embed_signup">
+            <form action="http://kioskfolio.us1.list-manage.com/subscribe/post?u=e66b89a31cc7055c3819e8200&amp;id=c996ef1569" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate">
+            	<fieldset>
+
+            <!--
+            <div class="mc-field-group">
+            <label for="mce-NAME">Your Name </label>
+            <input type="text" value="" name="NAME" class="" id="mce-NAME">
+            </div> -->
+            <div class="mc-field-group">
+            <label for="mce-EMAIL">Enter your email</label>
+            <input type="text" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+            </div>
+            <div class="mc-submit-group"><input type="submit" value="Join our beta &raquo;" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+            </fieldset>	
+            </form>
+            </div>
+
+            <!--End mc_embed_signup-->

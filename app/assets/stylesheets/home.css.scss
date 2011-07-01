@@ -17,6 +17,10 @@ body {
   width: 960px;
   padding: 10px 0;
   margin: auto;
+  
+  #logo {
+    @include inline-block;
+  }
 }
 
 #tagline {
@@ -28,6 +32,13 @@ body {
 
 .wrapper {
   @include clearfix;
+}
+
+.feature_images img {
+  padding: 5px;
+  background-color: #FFF;
+  border: 1px solid #eee;
+  @include border-radius;
 }
 
 #header_wrapper {

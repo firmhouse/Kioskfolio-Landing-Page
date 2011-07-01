@@ -1,4 +1,7 @@
 Kioskfolio::Application.routes.draw do
+  
+  match 'features' => 'home#features', :as => :features
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

@@ -39,6 +39,23 @@
   <% end -%>
 </head>
 <body>
+  
+  <div id="header_wrapper" class="wrapper">
+
+    <div id="header">
+
+      <div id="logo">
+        <%= link_to image_tag("logo_for_header.png", :alt => "Kioskfolio Logo"), "#home", :id => "home", :style => "border: 0;" %>
+      </div>
+      
+      <div id="menu">
+        <%= link_to "Home", root_path %>
+        <%= link_to "Features", features_path %>
+      </div>
+        
+    </div>
+  
+  </div>
 
 <%= yield %>
 
