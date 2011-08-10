@@ -3,118 +3,59 @@
   .container
   
     %div#tagline
-      %h1 Easily sell and market your Wordpress templates
-    
-    #accordion
-    
-      .problem
+      %h1 Make money with your Wordpress templates
       
-        .element= image_tag "your_site.png", :alt => "Image reflecting a forest with a lost cry for help."
-        .info
-          %h2 Sell using your own brand
-          %p 
-            Instead of being one of 1000s on a marketplace. 
-            %strong Sell your templates from your own gallery or site 
-            to increase your personal brand.
-        
-      .problem.last
-      
-        .element= image_tag "viral_spread.png", :alt => "Image showing an Adwords ad pointing no conversion to selling a theme."
-        .info
-          %h2 Buyers will spread your templates
-          %p
-            Market your templates by providing discounts and incentives
-            when 
-            %strong they share your templates and increase your sales!
-    
-    %p#to_product.center
-      We are building a product that let's you do this.
-      = link_to "Learn More &raquo;".html_safe, "#the_product", :class => "button", :id => "learn_product"
-    %p#beta_invite
-      = link_to "Get a beta invite"
-      
-#content_wrapper.wrapper.product
+      %h2 
+        Create 
+        %span exposure 
+        for your templates. 
+        Make them
+        %span spread
+        and 
+        %span sell
+        them.
 
-  #product.container
-    
-    %h2 The Product
-    
-    .benefits
-    
-      .benefit
-        %h3 Host your templates
-        
-        = image_tag "product_info/theme_account.png"
-        
-        %p
-          After you create your account, you can add and upload the templates you want to sell.
-        
-        %p 
-          Kioskfolio will 
-          %strong host all the files 
-          and make sure that customer's who bought your template 
-          %strong can always access them.
-        
-      .benefit
-        %h3 Integrate or publish
-        
-        = image_tag "product_info/scripts.png"
-        
-        %p
-          No-fuzz tools allow you to
-          %strong easily integrate the selling process into
-          your website or anywhere you'd like. No deep programming knowledge
-          required.
-        
-        %p
-          We take care of authorizing your customer and make sure you
-          %strong get payed directly when
-          a customer buys your template. 
-          
-      .benefit
-        %h3 Track viral spread
-        
-        = image_tag "product_info/buyer_share.png"
-        
-        %p 
-          By 
-          %strong providing rewards and discounts
-          the buyer won't think twice to spread
-          a sale.
-    
-        %p
-          Get informative statistics and tips
-          %strong to increase the conversion of your templates.
-          
-  #signup.container{:style => "min-height: 0; margin-top: 0; margin-bottom: 200px;"}
-  
-    .benefits
-  
-      %p{:style => "text-align: center; margin: 0; padding: 20px 0"} 
-        We will need your email to keep you informed and create your account.
-      :erb
-        <!-- Begin MailChimp Signup Form -->
-        <script type="text/javascript">
-        // delete this script tag and use a "div.mce_inline_error{ XXX !important}" selector
-        // or fill this in and it will be inlined when errors are generated
-        var mc_custom_error_style = '';
-        </script>
-        <div id="mc_embed_signup">
-        <form action="http://kioskfolio.us1.list-manage.com/subscribe/post?u=e66b89a31cc7055c3819e8200&amp;id=c996ef1569" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate">
-        	<fieldset>
+#product.container
+  .benefits
+    .benefit
+      = image_tag "screenshot_landing_page.png"
       
-        <!--
-        <div class="mc-field-group">
-        <label for="mce-NAME">Your Name </label>
-        <input type="text" value="" name="NAME" class="" id="mce-NAME">
-        </div> -->
-        <div class="mc-field-group">
-        <label for="mce-EMAIL">Enter your email</label>
-        <input type="text" value="" name="EMAIL" class="required email" id="mce-EMAIL">
-        </div>
-        <div class="mc-submit-group"><input type="submit" value="Get Started &raquo;" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-        </fieldset>	
-        </form>
-        </div>
-
-        <!--End mc_embed_signup-->
+      %h3 Set up converting landing pages
+      
+      %p 
+        Create beautiful and converting landing pages for your WordPress templates that you are currently selling on ThemeForest.
+      
+      %p Kioskfolio will be constantly tweaking and testing for the best results.
+    
+    .benefit
+      = image_tag "question_mark.png"
+      
+      %h3 Drive customers to your template
+      
+      %p Have your customers share your template by rewarding them with a discount when they share.
+      
+      %p Kioskfolio will let your buyers spread the word about you.
+    
+    .benefit
+      = image_tag "question_mark.png"
+      
+      %h3 Get your money right away
+      
+      %p 
+        Let customers buy and download your template. We provide file hosting and the payment process.
+        
+      %p
+        Kioskfolio does not work with credits or virtual money. You get payed cash, right away.
+  
+  %p.center
+    %strong Already a ThemeForest user? 
+    Tweet this to get an account or like us on Facebook.
+    
+  :erb
+    <div id="fb-root"></div>
+    
+  %p.center
+    :erb
+      <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://www.kioskfolio.com" data-text="Kioskfolio is a new way of earning money with your WordPress templates." data-count="horizontal">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+    :erb
+      <script src="http://connect.facebook.net/en_US/all.js#appId=258907460805006&amp;xfbml=1"></script><fb:like href="http://www.kioskfolio.com" send="false" layout="button_count" width="100" show_faces="true" action="like" font="lucida grande"></fb:like>
