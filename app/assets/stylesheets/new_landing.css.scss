@@ -1,0 +1,109 @@
+@import "compass/reset";
+@import "blueprint";
+@import "compass/css3";
+
+body#new_landing {
+  @include background(#f4f6f9);
+  font-family: "Helvetica", sans-serif;
+  
+  h1, h2 {
+    font-family: "Arvo", serif;
+    font-weight: bold;
+    color: #404040;
+    @include text-shadow(#FFF, 0, 1px, 1px);
+  }
+  
+  h3 {
+    font-weight: bold;
+    color: #404040;
+    @include text-shadow(#FFF, 0, 1px, 1px);
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    font-size: 28px;
+    margin-bottom: 25px;
+  }
+
+  #header_wrapper {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border-top: rgba(0,0,0,0.2) 1px solid;
+    border-bottom: rgba(0,0,0,0.2) 1px solid;
+    #header_image {
+      height: 433px; 
+      background-image: url(/assets/header_background.png);
+    }
+  }
+  
+  #signup_box {
+    background-color: #FFF;
+    padding: 20px;
+    @include box-shadow(rgba(0,0,0,0.1), 0, 2px, 4px);
+    
+    h3 {
+      color: #f45c00;
+      line-height: 1.4em;
+      font-size: 24px;
+    }
+    
+    p {
+      color: #000;
+    }
+    
+    span {
+      margin-bottom: 20px;
+      display: block;
+    }
+  }
+
+  .container {
+    @include container;
+    #header, #vision {
+      @include column(24, true);
+    }
+    
+    #mission p {
+      margin-right: 100px;
+    }
+    
+    p {
+      color: #4c4c4c;
+      line-height: 1.4em;
+      margin-bottom: 25px;
+      @include text-shadow(#FFF, 0, 1px, 1px);
+      font-size: 18px;
+    }
+    
+    #header {
+      text-align: center;
+      
+      img {
+        margin-top: 20px;
+      }
+      
+      h1 {
+        color: rgba(255,255,255,0.8);
+        font-size: 24px;
+        font-weight: bold;
+        @include text-shadow(rgba(0,0,0,0.3), 0, 3px, 10px);
+      }
+    }
+    
+    #mission {
+      @include column(16);
+      
+      span {
+        display: block;
+        margin-bottom: 20px;
+      }
+    }
+    #signup {
+      @include column(8, true);
+    }
+  }
+
+}

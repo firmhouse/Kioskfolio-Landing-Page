@@ -1,0 +1,201 @@
+/* line 17, ../../../../.rvm/gems/ruby-1.9.2-p180/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* line 20, ../../../../.rvm/gems/ruby-1.9.2-p180/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+body {
+  line-height: 1;
+}
+
+/* line 22, ../../../../.rvm/gems/ruby-1.9.2-p180/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 24, ../../../../.rvm/gems/ruby-1.9.2-p180/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 26, ../../../../.rvm/gems/ruby-1.9.2-p180/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 28, ../../../../.rvm/gems/ruby-1.9.2-p180/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 101, ../../../../.rvm/gems/ruby-1.9.2-p180/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 30, ../../../../.rvm/gems/ruby-1.9.2-p180/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 115, ../../../../.rvm/gems/ruby-1.9.2-p180/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 5, ../../app/assets/stylesheets/new_landing.css.scss */
+body#new_landing {
+  background: #f4f6f9;
+  font-family: "Helvetica", sans-serif;
+}
+/* line 9, ../../app/assets/stylesheets/new_landing.css.scss */
+body#new_landing h1, body#new_landing h2 {
+  font-family: "Arvo", serif;
+  font-weight: bold;
+  color: #404040;
+  text-shadow: white 0 1px 1px;
+}
+/* line 16, ../../app/assets/stylesheets/new_landing.css.scss */
+body#new_landing h3 {
+  font-weight: bold;
+  color: #404040;
+  text-shadow: white 0 1px 1px;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+/* line 24, ../../app/assets/stylesheets/new_landing.css.scss */
+body#new_landing h2 {
+  font-size: 28px;
+  margin-bottom: 25px;
+}
+/* line 29, ../../app/assets/stylesheets/new_landing.css.scss */
+body#new_landing #header_wrapper {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-top: rgba(0, 0, 0, 0.2) 1px solid;
+  border-bottom: rgba(0, 0, 0, 0.2) 1px solid;
+}
+/* line 36, ../../app/assets/stylesheets/new_landing.css.scss */
+body#new_landing #header_wrapper #header_image {
+  height: 433px;
+  background-image: url(/assets/header_background.png);
+}
+/* line 42, ../../app/assets/stylesheets/new_landing.css.scss */
+body#new_landing #signup_box {
+  background-color: #FFF;
+  padding: 20px;
+  -moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  -o-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+/* line 47, ../../app/assets/stylesheets/new_landing.css.scss */
+body#new_landing #signup_box h3 {
+  color: #f45c00;
+  line-height: 1.4em;
+  font-size: 24px;
+}
+/* line 53, ../../app/assets/stylesheets/new_landing.css.scss */
+body#new_landing #signup_box p {
+  color: #000;
+}
+/* line 57, ../../app/assets/stylesheets/new_landing.css.scss */
+body#new_landing #signup_box span {
+  margin-bottom: 20px;
+  display: block;
+}
+/* line 63, ../../app/assets/stylesheets/new_landing.css.scss */
+body#new_landing .container {
+  width: 950px;
+  margin: 0 auto;
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 65, ../../app/assets/stylesheets/new_landing.css.scss */
+body#new_landing .container #header, body#new_landing .container #vision {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 950px;
+}
+/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180/gems/compass-0.11.1/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html body#new_landing .container #header, * html body#new_landing .container #vision {
+  overflow-x: hidden;
+}
+/* line 69, ../../app/assets/stylesheets/new_landing.css.scss */
+body#new_landing .container #mission p {
+  margin-right: 100px;
+}
+/* line 73, ../../app/assets/stylesheets/new_landing.css.scss */
+body#new_landing .container p {
+  color: #4c4c4c;
+  line-height: 1.4em;
+  margin-bottom: 25px;
+  text-shadow: white 0 1px 1px;
+  font-size: 18px;
+}
+/* line 81, ../../app/assets/stylesheets/new_landing.css.scss */
+body#new_landing .container #header {
+  text-align: center;
+}
+/* line 84, ../../app/assets/stylesheets/new_landing.css.scss */
+body#new_landing .container #header img {
+  margin-top: 20px;
+}
+/* line 88, ../../app/assets/stylesheets/new_landing.css.scss */
+body#new_landing .container #header h1 {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: rgba(0, 0, 0, 0.3) 0 3px 10px;
+}
+/* line 96, ../../app/assets/stylesheets/new_landing.css.scss */
+body#new_landing .container #mission {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 630px;
+}
+/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180/gems/compass-0.11.1/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html body#new_landing .container #mission {
+  overflow-x: hidden;
+}
+/* line 99, ../../app/assets/stylesheets/new_landing.css.scss */
+body#new_landing .container #mission span {
+  display: block;
+  margin-bottom: 20px;
+}
+/* line 104, ../../app/assets/stylesheets/new_landing.css.scss */
+body#new_landing .container #signup {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 310px;
+}
+/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p180/gems/compass-0.11.1/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html body#new_landing .container #signup {
+  overflow-x: hidden;
+}

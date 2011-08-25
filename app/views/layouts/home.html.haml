@@ -1,0 +1,19 @@
+!!! 5
+%html
+  %head
+    %title Awesome Customer Engagement for theme authors
+    
+    = stylesheet_link_tag    "application"
+    :erb
+      <link href='http://fonts.googleapis.com/css?family=Arvo:700,400italic,700italic,400' rel='stylesheet' type='text/css'>
+    
+  %body#new_landing
+    #header_wrapper
+      #header_image
+        .container
+          #header
+            = image_tag "k.png"
+            %h1= image_tag "tagline.png"
+        
+    = yield
+      

@@ -69,37 +69,29 @@ body {
   text-shadow: white 0 1px 0;
 }
 
-/* line 16, ../../app/assets/stylesheets/home.css.scss */
+/*
+
 #header {
   width: 960px;
   padding: 10px 0;
   margin: auto;
-}
-/* line 21, ../../app/assets/stylesheets/home.css.scss */
-#header #logo {
-  display: -moz-inline-box;
-  -moz-box-orient: vertical;
-  display: inline-block;
-  vertical-align: middle;
-  *vertical-align: auto;
-}
-/* line 7, ../../../../.rvm/gems/ruby-1.9.2-p180/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
-#header #logo {
-  *display: inline;
-}
-
-/* line 26, ../../app/assets/stylesheets/home.css.scss */
+  
+  #logo {
+    @include inline-block;
+  }
+} */
+/* line 28, ../../app/assets/stylesheets/home.css.scss */
 #tagline {
   font-weight: bold;
   text-align: center;
   margin: 10px 0;
 }
-/* line 28, ../../app/assets/stylesheets/home.css.scss */
+/* line 30, ../../app/assets/stylesheets/home.css.scss */
 #tagline h1 {
   font-size: 30px;
   margin-bottom: 20px;
 }
-/* line 32, ../../app/assets/stylesheets/home.css.scss */
+/* line 34, ../../app/assets/stylesheets/home.css.scss */
 #tagline h2 {
   font-size: 20px;
   color: #333;
@@ -115,18 +107,18 @@ body {
 #tagline h2 {
   *display: inline;
 }
-/* line 38, ../../app/assets/stylesheets/home.css.scss */
+/* line 40, ../../app/assets/stylesheets/home.css.scss */
 #tagline h2 span {
   font-weight: bold;
 }
 
-/* line 46, ../../app/assets/stylesheets/home.css.scss */
+/* line 48, ../../app/assets/stylesheets/home.css.scss */
 .wrapper {
   overflow: hidden;
   *zoom: 1;
 }
 
-/* line 50, ../../app/assets/stylesheets/home.css.scss */
+/* line 52, ../../app/assets/stylesheets/home.css.scss */
 .feature_images img {
   padding: 5px;
   background-color: #FFF;
@@ -139,7 +131,7 @@ body {
   border-radius: 5px;
 }
 
-/* line 57, ../../app/assets/stylesheets/home.css.scss */
+/* line 59, ../../app/assets/stylesheets/home.css.scss */
 #header_wrapper {
   -moz-box-shadow: 0 2px 2px #dddddd;
   -webkit-box-shadow: 0 2px 2px #dddddd;
@@ -156,16 +148,16 @@ body {
   z-index: 999;
 }
 
-/* line 66, ../../app/assets/stylesheets/home.css.scss */
+/* line 68, ../../app/assets/stylesheets/home.css.scss */
 #content_wrapper {
   border-top: 1px solid #eee;
 }
-/* line 68, ../../app/assets/stylesheets/home.css.scss */
+/* line 70, ../../app/assets/stylesheets/home.css.scss */
 #content_wrapper.first {
   border-top: 0;
   margin-top: 100px;
 }
-/* line 72, ../../app/assets/stylesheets/home.css.scss */
+/* line 74, ../../app/assets/stylesheets/home.css.scss */
 #content_wrapper.product {
   background-color: rgba(0, 0, 0, 0.02);
   -moz-box-shadow: inset 0 0px 10px #bbbbbb;
@@ -175,58 +167,58 @@ body {
   margin-bottom: 0;
 }
 
-/* line 79, ../../app/assets/stylesheets/home.css.scss */
+/* line 81, ../../app/assets/stylesheets/home.css.scss */
 .container {
   width: 960px;
   margin: auto;
 }
 
-/* line 84, ../../app/assets/stylesheets/home.css.scss */
+/* line 86, ../../app/assets/stylesheets/home.css.scss */
 p {
   font-size: 18px;
   margin: 40px 0;
 }
 
-/* line 89, ../../app/assets/stylesheets/home.css.scss */
+/* line 91, ../../app/assets/stylesheets/home.css.scss */
 .center {
   text-align: center;
 }
 
-/* line 93, ../../app/assets/stylesheets/home.css.scss */
+/* line 95, ../../app/assets/stylesheets/home.css.scss */
 #beta_signup {
   width: 600px;
   margin-top: 20px;
   margin: auto;
 }
-/* line 97, ../../app/assets/stylesheets/home.css.scss */
+/* line 99, ../../app/assets/stylesheets/home.css.scss */
 #beta_signup h2 {
   font-size: 20px;
   line-height: 1.5em;
   font-weight: bold;
   margin: 1em 0;
 }
-/* line 103, ../../app/assets/stylesheets/home.css.scss */
+/* line 105, ../../app/assets/stylesheets/home.css.scss */
 #beta_signup p.cta {
   text-align: center;
   margin: 40px 0;
 }
-/* line 107, ../../app/assets/stylesheets/home.css.scss */
+/* line 109, ../../app/assets/stylesheets/home.css.scss */
 #beta_signup p {
   line-height: 1.5em;
   margin: 1em 0;
   color: #444;
 }
-/* line 111, ../../app/assets/stylesheets/home.css.scss */
+/* line 113, ../../app/assets/stylesheets/home.css.scss */
 #beta_signup p em {
   color: #000;
   font-weight: 600;
 }
 
-/* line 118, ../../app/assets/stylesheets/home.css.scss */
+/* line 120, ../../app/assets/stylesheets/home.css.scss */
 #product, #signup {
   margin-bottom: 20px;
 }
-/* line 120, ../../app/assets/stylesheets/home.css.scss */
+/* line 122, ../../app/assets/stylesheets/home.css.scss */
 #product h2, #signup h2 {
   font-size: 40px;
   color: #333;
@@ -234,7 +226,7 @@ p {
   text-align: center;
   margin-bottom: 20px;
 }
-/* line 128, ../../app/assets/stylesheets/home.css.scss */
+/* line 130, ../../app/assets/stylesheets/home.css.scss */
 #product .benefits, #signup .benefits {
   background-color: #FFF;
   -moz-border-radius: 5px;
@@ -249,7 +241,7 @@ p {
   box-shadow: 0 2px 1px rgba(0, 0, 0, 0.05);
   border: 1px solid #eee;
 }
-/* line 134, ../../app/assets/stylesheets/home.css.scss */
+/* line 136, ../../app/assets/stylesheets/home.css.scss */
 #product .benefit, #signup .benefit {
   display: -moz-inline-box;
   -moz-box-orient: vertical;
@@ -261,7 +253,7 @@ p {
   margin-top: 20px;
   width: 295px;
 }
-/* line 135, ../../app/assets/stylesheets/home.css.scss */
+/* line 137, ../../app/assets/stylesheets/home.css.scss */
 #product .benefit h3, #signup .benefit h3 {
   font-size: 16px;
   margin-bottom: 20px;
@@ -272,36 +264,36 @@ p {
 #product .benefit, #signup .benefit {
   *display: inline;
 }
-/* line 146, ../../app/assets/stylesheets/home.css.scss */
+/* line 148, ../../app/assets/stylesheets/home.css.scss */
 #product .benefit p, #signup .benefit p {
   margin: 1em 0;
   line-height: 1.4em;
   font-size: 15px;
   color: #444;
 }
-/* line 152, ../../app/assets/stylesheets/home.css.scss */
+/* line 154, ../../app/assets/stylesheets/home.css.scss */
 #product .benefit img, #signup .benefit img {
   border: 1px solid #ccc;
 }
-/* line 155, ../../app/assets/stylesheets/home.css.scss */
+/* line 157, ../../app/assets/stylesheets/home.css.scss */
 #product .benefit:first-child, #signup .benefit:first-child {
   margin-left: 20px;
 }
-/* line 158, ../../app/assets/stylesheets/home.css.scss */
+/* line 160, ../../app/assets/stylesheets/home.css.scss */
 #product .benefit:last-child, #signup .benefit:last-child {
   margin-right: 0;
 }
-/* line 163, ../../app/assets/stylesheets/home.css.scss */
+/* line 165, ../../app/assets/stylesheets/home.css.scss */
 #product iframe, #product span, #signup iframe, #signup span {
   vertical-align: top;
 }
 
-/* line 168, ../../app/assets/stylesheets/home.css.scss */
+/* line 170, ../../app/assets/stylesheets/home.css.scss */
 #accordion {
   text-align: center;
   margin-bottom: 10px;
 }
-/* line 170, ../../app/assets/stylesheets/home.css.scss */
+/* line 172, ../../app/assets/stylesheets/home.css.scss */
 #accordion .problem {
   background-color: #FFF;
   width: 400px;
@@ -329,11 +321,11 @@ p {
 #accordion .problem {
   *display: inline;
 }
-/* line 177, ../../app/assets/stylesheets/home.css.scss */
+/* line 179, ../../app/assets/stylesheets/home.css.scss */
 #accordion .problem:last-child, #accordion .problem .last {
   margin-right: 0;
 }
-/* line 185, ../../app/assets/stylesheets/home.css.scss */
+/* line 187, ../../app/assets/stylesheets/home.css.scss */
 #accordion .info {
   font-weight: bold;
   font-size: 14px;
@@ -349,63 +341,63 @@ p {
   background-image: -o-linear-gradient(top, #f0f0f0, #e0e0e0);
   background-image: linear-gradient(top, #f0f0f0, #e0e0e0);
 }
-/* line 194, ../../app/assets/stylesheets/home.css.scss */
+/* line 196, ../../app/assets/stylesheets/home.css.scss */
 #accordion .info strong {
   font-size: 16px;
 }
-/* line 198, ../../app/assets/stylesheets/home.css.scss */
+/* line 200, ../../app/assets/stylesheets/home.css.scss */
 #accordion .info h2 {
   font-weight: bold;
   margin: 1em 10px;
   font-size: 18px;
 }
-/* line 203, ../../app/assets/stylesheets/home.css.scss */
+/* line 205, ../../app/assets/stylesheets/home.css.scss */
 #accordion .info p {
   font-weight: normal;
   font-size: 14px;
   margin: 10px 20px;
   text-align: left;
 }
-/* line 210, ../../app/assets/stylesheets/home.css.scss */
+/* line 212, ../../app/assets/stylesheets/home.css.scss */
 #accordion .element {
   padding: 10px;
   text-align: center;
 }
 
-/* line 216, ../../app/assets/stylesheets/home.css.scss */
+/* line 218, ../../app/assets/stylesheets/home.css.scss */
 #beta_invite {
   text-align: center;
   font-size: 11px;
 }
-/* line 219, ../../app/assets/stylesheets/home.css.scss */
+/* line 221, ../../app/assets/stylesheets/home.css.scss */
 #beta_invite a {
   color: #888;
 }
 
-/* line 224, ../../app/assets/stylesheets/home.css.scss */
+/* line 226, ../../app/assets/stylesheets/home.css.scss */
 .learn_more {
   position: absolute;
   bottom: 30px;
   left: 90px;
 }
 
-/* line 230, ../../app/assets/stylesheets/home.css.scss */
+/* line 232, ../../app/assets/stylesheets/home.css.scss */
 p.center {
   text-align: center;
 }
 
-/* line 234, ../../app/assets/stylesheets/home.css.scss */
+/* line 236, ../../app/assets/stylesheets/home.css.scss */
 #to_product {
   margin-top: 60px;
   font-size: 20px;
 }
 
-/* line 239, ../../app/assets/stylesheets/home.css.scss */
+/* line 241, ../../app/assets/stylesheets/home.css.scss */
 #to_product .button {
   margin-left: 20px;
 }
 
-/* line 243, ../../app/assets/stylesheets/home.css.scss */
+/* line 245, ../../app/assets/stylesheets/home.css.scss */
 .button {
   -moz-border-radius: 20px;
   -webkit-border-radius: 20px;
@@ -429,7 +421,7 @@ p.center {
   -o-box-shadow: inset 0 0 1px white;
   box-shadow: inset 0 0 1px white;
 }
-/* line 253, ../../app/assets/stylesheets/home.css.scss */
+/* line 255, ../../app/assets/stylesheets/home.css.scss */
 .button:hover {
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffb453), color-stop(100%, #ff9306));
   background: -webkit-linear-gradient(#ffb453, #ff9306);
@@ -437,11 +429,11 @@ p.center {
   background: -o-linear-gradient(#ffb453, #ff9306);
   background: linear-gradient(#ffb453, #ff9306);
 }
-/* line 256, ../../app/assets/stylesheets/home.css.scss */
+/* line 258, ../../app/assets/stylesheets/home.css.scss */
 .button.large {
   font-size: 22px;
 }
-/* line 259, ../../app/assets/stylesheets/home.css.scss */
+/* line 261, ../../app/assets/stylesheets/home.css.scss */
 .button:disabled, .button.disabled {
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffe0b9), color-stop(100%, #ffca86));
   background: -webkit-linear-gradient(#ffe0b9, #ffca86);
@@ -451,17 +443,17 @@ p.center {
   border-color: #ffca86;
   color: #666;
 }
-/* line 263, ../../app/assets/stylesheets/home.css.scss */
+/* line 265, ../../app/assets/stylesheets/home.css.scss */
 .button:disabled:hover, .button.disabled:hover {
   color: #000;
 }
 
-/* line 269, ../../app/assets/stylesheets/home.css.scss */
+/* line 271, ../../app/assets/stylesheets/home.css.scss */
 #mc_embed_signup {
   text-align: center;
   margin-bottom: 20px;
 }
-/* line 272, ../../app/assets/stylesheets/home.css.scss */
+/* line 274, ../../app/assets/stylesheets/home.css.scss */
 #mc_embed_signup .mc-field-group, #mc_embed_signup .mc-submit-group {
   display: -moz-inline-box;
   -moz-box-orient: vertical;
@@ -473,7 +465,7 @@ p.center {
 #mc_embed_signup .mc-field-group, #mc_embed_signup .mc-submit-group {
   *display: inline;
 }
-/* line 275, ../../app/assets/stylesheets/home.css.scss */
+/* line 277, ../../app/assets/stylesheets/home.css.scss */
 #mc_embed_signup .mc-field-group {
   position: relative;
   height: 35px;
@@ -485,7 +477,7 @@ p.center {
   box-shadow: inset 0 1px 2px #bbbbbb;
   border: 1px solid #b0b0b0;
 }
-/* line 279, ../../app/assets/stylesheets/home.css.scss */
+/* line 281, ../../app/assets/stylesheets/home.css.scss */
 #mc_embed_signup .mc-field-group.active {
   border-color: #555;
   -moz-box-shadow: inset 0 1px 2px #aaaaaa;
@@ -493,11 +485,11 @@ p.center {
   -o-box-shadow: inset 0 1px 2px #aaaaaa;
   box-shadow: inset 0 1px 2px #aaaaaa;
 }
-/* line 282, ../../app/assets/stylesheets/home.css.scss */
+/* line 284, ../../app/assets/stylesheets/home.css.scss */
 #mc_embed_signup .mc-field-group.active label {
   color: #bbb;
 }
-/* line 289, ../../app/assets/stylesheets/home.css.scss */
+/* line 291, ../../app/assets/stylesheets/home.css.scss */
 #mc_embed_signup .mc-field-group label {
   position: absolute;
   top: 0;
@@ -517,7 +509,7 @@ p.center {
 #mc_embed_signup .mc-field-group label {
   *display: inline;
 }
-/* line 300, ../../app/assets/stylesheets/home.css.scss */
+/* line 302, ../../app/assets/stylesheets/home.css.scss */
 #mc_embed_signup .mc-field-group input {
   position: absolute;
   top: 0;
@@ -533,7 +525,7 @@ p.center {
   background: 0;
   z-index: 2;
 }
-/* line 314, ../../app/assets/stylesheets/home.css.scss */
+/* line 316, ../../app/assets/stylesheets/home.css.scss */
 #mc_embed_signup .mc-submit-group input {
   padding: 8px 14px;
   font-family: "Helvetica";

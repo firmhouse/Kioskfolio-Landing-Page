@@ -6,4 +6,8 @@ class HomeController < ApplicationController
     response.headers['Cache-Control'] = 'public, max-age=300'
   end
   
+  def new_index
+    render :layout => "home"
+  end
+  
 end
